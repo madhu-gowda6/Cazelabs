@@ -1,0 +1,537 @@
+2025-07-10 20:18:48,797 - INFO - AUDIT: {"timestamp": "2025-07-10T20:18:48.797710", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:18:48,799 - INFO - AUDIT: {"timestamp": "2025-07-10T20:18:48.799622", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:18:48,955 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.53.185.200:5004
+2025-07-10 20:18:48,956 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 20:18:48,957 - INFO -  * Restarting with stat
+2025-07-10 20:18:49,671 - INFO - AUDIT: {"timestamp": "2025-07-10T20:18:49.671564", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:18:49,673 - INFO - AUDIT: {"timestamp": "2025-07-10T20:18:49.673485", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:18:49,689 - WARNING -  * Debugger is active!
+2025-07-10 20:18:49,694 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:19:47,556 - INFO - 127.0.0.1 - - [10/Jul/2025 20:19:47] "POST / HTTP/1.1" 200 -
+2025-07-10 20:19:53,812 - INFO - 127.0.0.1 - - [10/Jul/2025 20:19:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-10 20:20:33,141 - INFO - 127.0.0.1 - - [10/Jul/2025 20:20:33] "GET /manage HTTP/1.1" 200 -
+2025-07-10 20:20:43,255 - INFO - 127.0.0.1 - - [10/Jul/2025 20:20:43] "GET /search HTTP/1.1" 200 -
+2025-07-10 20:20:56,720 - INFO - 127.0.0.1 - - [10/Jul/2025 20:20:56] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2025-07-10 20:20:56,821 - INFO - 127.0.0.1 - - [10/Jul/2025 20:20:56] "GET /search?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-10 20:20:56,841 - INFO - 127.0.0.1 - - [10/Jul/2025 20:20:56] "GET /search?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-10 20:20:56,897 - INFO - 127.0.0.1 - - [10/Jul/2025 20:20:56] "GET /search?__debugger__=yes&cmd=resource&f=console.png&s=Xe7PQcQUfLLh258EhBMu HTTP/1.1" 200 -
+2025-07-10 20:20:56,923 - INFO - 127.0.0.1 - - [10/Jul/2025 20:20:56] "GET /search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-10 20:21:04,950 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:04] "GET /audit HTTP/1.1" 200 -
+2025-07-10 20:21:23,945 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:23] "[35m[1mGET /inactive HTTP/1.1[0m" 500 -
+2025-07-10 20:21:23,985 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:23] "GET /inactive?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-10 20:21:23,985 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:23] "GET /inactive?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-10 20:21:24,011 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:24] "GET /inactive?__debugger__=yes&cmd=resource&f=console.png&s=Xe7PQcQUfLLh258EhBMu HTTP/1.1" 200 -
+2025-07-10 20:21:24,045 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:24] "GET /inactive?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-10 20:21:32,841 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:32] "[35m[1mGET /batch HTTP/1.1[0m" 500 -
+2025-07-10 20:21:32,876 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:32] "GET /batch?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-10 20:21:32,879 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:32] "GET /batch?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-10 20:21:32,922 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:32] "GET /batch?__debugger__=yes&cmd=resource&f=console.png&s=Xe7PQcQUfLLh258EhBMu HTTP/1.1" 200 -
+2025-07-10 20:21:32,960 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:32] "GET /batch?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-10 20:21:38,207 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:38] "GET / HTTP/1.1" 200 -
+2025-07-10 20:21:41,782 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:41] "GET /manage HTTP/1.1" 200 -
+2025-07-10 20:21:56,991 - INFO - 127.0.0.1 - - [10/Jul/2025 20:21:56] "GET /?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752159116656 HTTP/1.1" 200 -
+2025-07-10 20:23:20,824 - INFO - 127.0.0.1 - - [10/Jul/2025 20:23:20] "[35m[1mGET /inactive HTTP/1.1[0m" 500 -
+2025-07-10 20:23:20,841 - INFO - 127.0.0.1 - - [10/Jul/2025 20:23:20] "GET /inactive?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-10 20:23:21,148 - INFO - 127.0.0.1 - - [10/Jul/2025 20:23:21] "GET /inactive?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-10 20:23:21,506 - INFO - 127.0.0.1 - - [10/Jul/2025 20:23:21] "GET /inactive?__debugger__=yes&cmd=resource&f=console.png&s=Xe7PQcQUfLLh258EhBMu HTTP/1.1" 200 -
+2025-07-10 20:23:32,971 - INFO - 127.0.0.1 - - [10/Jul/2025 20:23:32] "[36mGET /inactive?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-10 20:26:39,378 - INFO - AUDIT: {"timestamp": "2025-07-10T20:26:39.378809", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:26:39,380 - INFO - AUDIT: {"timestamp": "2025-07-10T20:26:39.379811", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:26:39,414 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.53.185.200:5004
+2025-07-10 20:26:39,415 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 20:26:39,416 - INFO -  * Restarting with stat
+2025-07-10 20:26:39,971 - INFO - AUDIT: {"timestamp": "2025-07-10T20:26:39.971207", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:26:39,973 - INFO - AUDIT: {"timestamp": "2025-07-10T20:26:39.973137", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:26:39,989 - WARNING -  * Debugger is active!
+2025-07-10 20:26:39,991 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:26:47,436 - INFO - 127.0.0.1 - - [10/Jul/2025 20:26:47] "GET /?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752159407103 HTTP/1.1" 200 -
+2025-07-10 20:27:33,624 - INFO - 127.0.0.1 - - [10/Jul/2025 20:27:33] "GET / HTTP/1.1" 200 -
+2025-07-10 20:28:36,588 - INFO - "GET /?state=2EnGoXgWyucKZgydcaenP8Hbq5ZqN8&code=4/0AVMBsJgSR2zMegGLyoOcGtLT90AG386AiPxT6d3bvjDjxoT3LyTF-HamK7duLc3U8Jgadw&scope=https://www.googleapis.com/auth/drive%20https://www.googleapis.com/auth/admin.directory.group.readonly%20https://www.googleapis.com/auth/admin.directory.user.readonly HTTP/1.1" 200 65
+2025-07-10 20:28:37,223 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:28:37,263 - INFO - 127.0.0.1 - - [10/Jul/2025 20:28:37] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 20:29:00,037 - INFO - 127.0.0.1 - - [10/Jul/2025 20:29:00] "[33mPOST /check_permissions HTTP/1.1[0m" 404 -
+2025-07-10 20:29:13,609 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:29:13,617 - INFO - 127.0.0.1 - - [10/Jul/2025 20:29:13] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 20:30:02,792 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:30:02,801 - INFO - 127.0.0.1 - - [10/Jul/2025 20:30:02] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 20:30:04,768 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:30:06,009 - INFO - 127.0.0.1 - - [10/Jul/2025 20:30:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-10 20:30:06,360 - INFO - 127.0.0.1 - - [10/Jul/2025 20:30:06] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 20:30:31,224 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:30:35,147 - INFO - 127.0.0.1 - - [10/Jul/2025 20:30:35] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 20:31:45,318 - INFO - AUDIT: {"timestamp": "2025-07-10T20:31:45.318371", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:31:45,319 - INFO - AUDIT: {"timestamp": "2025-07-10T20:31:45.319373", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:31:45,347 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.53.185.200:5004
+2025-07-10 20:31:45,347 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 20:31:45,349 - INFO -  * Restarting with stat
+2025-07-10 20:31:45,935 - INFO - AUDIT: {"timestamp": "2025-07-10T20:31:45.934725", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:31:45,937 - INFO - AUDIT: {"timestamp": "2025-07-10T20:31:45.937728", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:31:45,950 - WARNING -  * Debugger is active!
+2025-07-10 20:31:45,953 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:34:42,478 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:34:51,419 - INFO - 127.0.0.1 - - [10/Jul/2025 20:34:51] "[35m[1mGET /inactive HTTP/1.1[0m" 500 -
+2025-07-10 20:35:42,184 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 20:35:42,299 - INFO -  * Restarting with stat
+2025-07-10 20:35:42,994 - INFO - AUDIT: {"timestamp": "2025-07-10T20:35:42.994668", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:35:42,996 - INFO - AUDIT: {"timestamp": "2025-07-10T20:35:42.996670", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:35:43,013 - WARNING -  * Debugger is active!
+2025-07-10 20:35:43,017 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:35:54,799 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:36:27,455 - INFO - AUDIT: {"timestamp": "2025-07-10T20:36:27.455882", "action": "detect_inactive_users_failed", "details": "Error detecting inactive users: <HttpError 500 when requesting https://www.googleapis.com/drive/v3/files?q=trashed+%3D+false&fields=nextPageToken%2C+files%28id%2C+name%2C+permissions%2C+modifiedTime%29&pageToken=~%21%21~AI9FV7QWlZPiF0DBMg5n61X_0S36ftKKNwMalyGahHd_27zx6nBL8zH1Zd-MEuKyXnxZWrLGmzuOMOx1siUu_YH2rP8C82o-zPrLDdgxiCvEqmDXvUoYIJmWRjh0USS_hjJHHFE8MtFGMV1CJXTJ37AZdf1Mj92PVX9RqGP-RT7pmt8DgcQtMIlZE41aS3VD2xxbKVlsTEfPLYbA7x2FwJB9lRNfZ5FOce9Pqwozu-o97-A58hWrQ8SBX2tzx1_kVpLItS-MhJkscW26UMOLYQp7seElKBoK-MKhh8jvn6-jNz31AFnqgHSI3l7Sn3WCrRQ0kO5FbBkzAZeyiqacrVxyf_xzFeLAxO3vPl9gNuy1pQCSWoeWKjwkEqh3sC7Matj3bDlVdysP2skY71cK1RnaWwup8fDwPEGY57sAhv0ApovMRYvGZffEP7YFz2UpBzjRM-4-bmXWoGiagP589ZbdHfF7067CwM9IrMaOn2MPQuY__rhRJoo%3D&alt=json returned \"Internal Error\". Details: \"[{'message': 'Internal Error', 'domain': 'global', 'reason': 'internalError'}]\">", "user": "system"}
+2025-07-10 20:36:27,463 - INFO - 127.0.0.1 - - [10/Jul/2025 20:36:27] "[35m[1mGET /inactive HTTP/1.1[0m" 500 -
+2025-07-10 20:39:27,049 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 20:39:27,136 - INFO -  * Restarting with stat
+2025-07-10 20:39:27,997 - INFO - AUDIT: {"timestamp": "2025-07-10T20:39:27.997168", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:39:27,998 - INFO - AUDIT: {"timestamp": "2025-07-10T20:39:27.998167", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:39:28,017 - WARNING -  * Debugger is active!
+2025-07-10 20:39:28,021 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:39:58,183 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 20:39:58,258 - INFO -  * Restarting with stat
+2025-07-10 20:39:59,001 - INFO - AUDIT: {"timestamp": "2025-07-10T20:39:59.001209", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:39:59,002 - INFO - AUDIT: {"timestamp": "2025-07-10T20:39:59.002209", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:39:59,018 - WARNING -  * Debugger is active!
+2025-07-10 20:39:59,021 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:40:10,415 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:40:14,367 - INFO - 127.0.0.1 - - [10/Jul/2025 20:40:14] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 20:41:08,128 - INFO - 127.0.0.1 - - [10/Jul/2025 20:41:08] "GET /audit HTTP/1.1" 200 -
+2025-07-10 20:41:23,993 - INFO - 127.0.0.1 - - [10/Jul/2025 20:41:23] "GET /batch HTTP/1.1" 200 -
+2025-07-10 20:41:37,593 - INFO - 127.0.0.1 - - [10/Jul/2025 20:41:37] "GET /search HTTP/1.1" 200 -
+2025-07-10 20:41:47,363 - INFO - 127.0.0.1 - - [10/Jul/2025 20:41:47] "GET /?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752160307013 HTTP/1.1" 200 -
+2025-07-10 20:42:17,333 - INFO - 127.0.0.1 - - [10/Jul/2025 20:42:17] "GET /manage HTTP/1.1" 200 -
+2025-07-10 20:42:27,532 - INFO - 127.0.0.1 - - [10/Jul/2025 20:42:27] "GET /audit HTTP/1.1" 200 -
+2025-07-10 20:42:52,810 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:42:55,662 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:42:55,909 - INFO - 127.0.0.1 - - [10/Jul/2025 20:42:55] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 20:42:59,216 - INFO - 127.0.0.1 - - [10/Jul/2025 20:42:59] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 20:43:32,013 - INFO - 127.0.0.1 - - [10/Jul/2025 20:43:32] "GET /batch HTTP/1.1" 200 -
+2025-07-10 20:43:43,992 - INFO - 127.0.0.1 - - [10/Jul/2025 20:43:43] "GET /manage HTTP/1.1" 200 -
+2025-07-10 20:51:30,261 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 20:51:30,438 - INFO -  * Restarting with stat
+2025-07-10 20:51:31,534 - INFO - AUDIT: {"timestamp": "2025-07-10T20:51:31.534385", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:51:31,537 - INFO - AUDIT: {"timestamp": "2025-07-10T20:51:31.537381", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:51:31,569 - WARNING -  * Debugger is active!
+2025-07-10 20:51:31,574 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:53:10,881 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 20:53:10,985 - INFO -  * Restarting with stat
+2025-07-10 20:53:11,975 - INFO - AUDIT: {"timestamp": "2025-07-10T20:53:11.975177", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:53:11,977 - INFO - AUDIT: {"timestamp": "2025-07-10T20:53:11.977297", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:53:12,000 - WARNING -  * Debugger is active!
+2025-07-10 20:53:12,004 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:53:51,141 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 20:53:51,216 - INFO -  * Restarting with stat
+2025-07-10 20:53:51,825 - INFO - AUDIT: {"timestamp": "2025-07-10T20:53:51.825385", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:53:51,827 - INFO - AUDIT: {"timestamp": "2025-07-10T20:53:51.827386", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:53:51,842 - WARNING -  * Debugger is active!
+2025-07-10 20:53:51,846 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:54:17,947 - INFO -  * Detected change in 'D:\\Cazelabs\\templates.py', reloading
+2025-07-10 20:54:18,060 - INFO -  * Restarting with stat
+2025-07-10 20:54:18,758 - INFO - AUDIT: {"timestamp": "2025-07-10T20:54:18.758728", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 20:54:18,761 - INFO - AUDIT: {"timestamp": "2025-07-10T20:54:18.761728", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 20:54:18,786 - WARNING -  * Debugger is active!
+2025-07-10 20:54:18,790 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 20:54:50,964 - INFO - 127.0.0.1 - - [10/Jul/2025 20:54:50] "GET /alerts HTTP/1.1" 200 -
+2025-07-10 20:55:19,619 - INFO - 127.0.0.1 - - [10/Jul/2025 20:55:19] "GET /?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752161119276 HTTP/1.1" 200 -
+2025-07-10 20:55:25,460 - INFO - 127.0.0.1 - - [10/Jul/2025 20:55:25] "GET /alerts HTTP/1.1" 200 -
+2025-07-10 20:56:33,450 - INFO - AUDIT: {"timestamp": "2025-07-10T20:56:33.450761", "action": "configure_alert", "details": "Alert configured: permission_change for admin@example.com", "user": "system"}
+2025-07-10 20:56:33,456 - INFO - 127.0.0.1 - - [10/Jul/2025 20:56:33] "POST /alerts HTTP/1.1" 200 -
+2025-07-10 20:57:32,118 - INFO - 127.0.0.1 - - [10/Jul/2025 20:57:32] "GET / HTTP/1.1" 200 -
+2025-07-10 20:57:36,299 - INFO - 127.0.0.1 - - [10/Jul/2025 20:57:36] "GET /alerts HTTP/1.1" 200 -
+2025-07-10 20:58:07,078 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:58:07,119 - INFO - 127.0.0.1 - - [10/Jul/2025 20:58:07] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 20:58:12,427 - INFO - 127.0.0.1 - - [10/Jul/2025 20:58:12] "GET / HTTP/1.1" 200 -
+2025-07-10 20:58:16,348 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:58:16,355 - INFO - 127.0.0.1 - - [10/Jul/2025 20:58:16] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 20:58:18,130 - INFO - 127.0.0.1 - - [10/Jul/2025 20:58:18] "GET / HTTP/1.1" 200 -
+2025-07-10 20:58:21,569 - INFO - 127.0.0.1 - - [10/Jul/2025 20:58:21] "GET /search HTTP/1.1" 200 -
+2025-07-10 20:58:38,214 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:58:40,145 - INFO - AUDIT: {"timestamp": "2025-07-10T20:58:40.145667", "action": "search_files_failed", "details": "Search failed: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files?q=name+contains+%27Codeforces+2.0%27s+directory%27+and+trashed+%3D+false&fields=files%28id%2C+name%2C+mimeType%2C+owners%2C+permissions%2C+modifiedTime%29&supportsAllDrives=true&includeItemsFromAllDrives=true&alt=json returned \"Invalid Value\". Details: \"[{'message': 'Invalid Value', 'domain': 'global', 'reason': 'invalid', 'location': 'q', 'locationType': 'parameter'}]\">", "user": "system"}
+2025-07-10 20:58:40,146 - INFO - AUDIT: {"timestamp": "2025-07-10T20:58:40.146667", "action": "search", "details": "Search performed: Codeforces 2.0's directory, type: ", "user": "system"}
+2025-07-10 20:58:40,153 - INFO - 127.0.0.1 - - [10/Jul/2025 20:58:40] "POST /search HTTP/1.1" 200 -
+2025-07-10 20:59:35,355 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:59:36,475 - INFO - AUDIT: {"timestamp": "2025-07-10T20:59:36.475224", "action": "search", "details": "Search performed: Labsheet3, type: ", "user": "system"}
+2025-07-10 20:59:36,486 - INFO - 127.0.0.1 - - [10/Jul/2025 20:59:36] "POST /search HTTP/1.1" 200 -
+2025-07-10 20:59:41,238 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:59:41,247 - INFO - 127.0.0.1 - - [10/Jul/2025 20:59:41] "GET /permissions?file_id=1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8 HTTP/1.1" 200 -
+2025-07-10 20:59:49,513 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:59:49,519 - INFO - 127.0.0.1 - - [10/Jul/2025 20:59:49] "GET /permissions?file_id=1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1 HTTP/1.1" 200 -
+2025-07-10 20:59:55,743 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 20:59:58,360 - INFO - 127.0.0.1 - - [10/Jul/2025 20:59:58] "POST /permissions?file_id=1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1 HTTP/1.1" 200 -
+2025-07-10 21:00:14,120 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:00:14,140 - INFO - 127.0.0.1 - - [10/Jul/2025 21:00:14] "GET /permissions?file_id=1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1 HTTP/1.1" 200 -
+2025-07-10 21:00:18,770 - INFO - 127.0.0.1 - - [10/Jul/2025 21:00:18] "GET / HTTP/1.1" 200 -
+2025-07-10 21:00:21,871 - INFO - 127.0.0.1 - - [10/Jul/2025 21:00:21] "GET /audit HTTP/1.1" 200 -
+2025-07-10 21:00:46,559 - INFO - 127.0.0.1 - - [10/Jul/2025 21:00:46] "GET / HTTP/1.1" 200 -
+2025-07-10 21:00:54,392 - INFO - 127.0.0.1 - - [10/Jul/2025 21:00:54] "GET /batch HTTP/1.1" 200 -
+2025-07-10 21:01:05,887 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:08,683 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:09,983 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:11,785 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:12,981 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:17,130 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:17,734 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:18,057 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:20,154 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:20,897 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:21,213 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:21,413 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:21,647 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:27,579 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:28,937 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:30,343 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:30] "GET / HTTP/1.1" 200 -
+2025-07-10 21:01:35,397 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:01:55,430 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:55] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:01:55,570 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:55] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:01:56,127 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:56] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:01:56,599 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:56] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:01:56,607 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:56] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:01:59,672 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:59] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:01:59,784 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:59] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:01:59,816 - INFO - 127.0.0.1 - - [10/Jul/2025 21:01:59] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:02:00,414 - INFO - 127.0.0.1 - - [10/Jul/2025 21:02:00] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:02:04,862 - INFO - 127.0.0.1 - - [10/Jul/2025 21:02:04] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:02:06,099 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:02:13,628 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:02:15,207 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:02:16,515 - INFO - 127.0.0.1 - - [10/Jul/2025 21:02:16] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:02:55,062 - INFO - 127.0.0.1 - - [10/Jul/2025 21:02:55] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:02:55,573 - INFO - 127.0.0.1 - - [10/Jul/2025 21:02:55] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:03:07,798 - INFO - 127.0.0.1 - - [10/Jul/2025 21:03:07] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:03:15,392 - INFO - 127.0.0.1 - - [10/Jul/2025 21:03:15] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:04:17,027 - INFO - 127.0.0.1 - - [10/Jul/2025 21:04:17] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:04:42,405 - INFO - 127.0.0.1 - - [10/Jul/2025 21:04:42] "GET / HTTP/1.1" 200 -
+2025-07-10 21:04:44,728 - INFO - 127.0.0.1 - - [10/Jul/2025 21:04:44] "GET /manage HTTP/1.1" 200 -
+2025-07-10 21:04:49,983 - INFO - 127.0.0.1 - - [10/Jul/2025 21:04:49] "GET / HTTP/1.1" 200 -
+2025-07-10 21:04:51,885 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:04:51,891 - INFO - 127.0.0.1 - - [10/Jul/2025 21:04:51] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:04:56,681 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:04:59,344 - INFO - 127.0.0.1 - - [10/Jul/2025 21:04:59] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:05:51,998 - INFO - 127.0.0.1 - - [10/Jul/2025 21:05:51] "[35m[1mPOST /permissions HTTP/1.1[0m" 500 -
+2025-07-10 21:05:52,010 - INFO - 127.0.0.1 - - [10/Jul/2025 21:05:52] "[35m[1mGET /inactive HTTP/1.1[0m" 500 -
+2025-07-10 21:05:52,046 - INFO - 127.0.0.1 - - [10/Jul/2025 21:05:52] "[35m[1mGET /inactive HTTP/1.1[0m" 500 -
+2025-07-10 21:05:54,228 - INFO - 127.0.0.1 - - [10/Jul/2025 21:05:54] "GET /permissions?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-10 21:05:54,280 - INFO - 127.0.0.1 - - [10/Jul/2025 21:05:54] "GET /permissions?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-10 21:05:54,423 - INFO - 127.0.0.1 - - [10/Jul/2025 21:05:54] "GET /permissions?__debugger__=yes&cmd=resource&f=console.png&s=zyLogTrmH1w3orKA0GX7 HTTP/1.1" 200 -
+2025-07-10 21:05:54,813 - INFO - 127.0.0.1 - - [10/Jul/2025 21:05:54] "GET /permissions?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-10 21:06:09,731 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:06:14,936 - INFO - 127.0.0.1 - - [10/Jul/2025 21:06:14] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 21:06:23,183 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:06:23,200 - INFO - 127.0.0.1 - - [10/Jul/2025 21:06:23] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:06:24,619 - INFO - 127.0.0.1 - - [10/Jul/2025 21:06:24] "GET /manage HTTP/1.1" 200 -
+2025-07-10 21:06:26,783 - INFO - 127.0.0.1 - - [10/Jul/2025 21:06:26] "GET /search HTTP/1.1" 200 -
+2025-07-10 21:06:43,259 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:06:44,469 - INFO - AUDIT: {"timestamp": "2025-07-10T21:06:44.469802", "action": "search_files_failed", "details": "Search failed: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files?q=name+contains+%27Codeforces+2.0%27s+directory%27+and+trashed+%3D+false+and+mimeType+%3D+%27application%2Fvnd.google-apps.folder%27&fields=files%28id%2C+name%2C+mimeType%2C+owners%2C+permissions%2C+modifiedTime%29&supportsAllDrives=true&includeItemsFromAllDrives=true&alt=json returned \"Invalid Value\". Details: \"[{'message': 'Invalid Value', 'domain': 'global', 'reason': 'invalid', 'location': 'q', 'locationType': 'parameter'}]\">", "user": "system"}
+2025-07-10 21:06:44,472 - INFO - AUDIT: {"timestamp": "2025-07-10T21:06:44.472334", "action": "search", "details": "Search performed: Codeforces 2.0's directory, type: folder", "user": "system"}
+2025-07-10 21:06:44,488 - INFO - 127.0.0.1 - - [10/Jul/2025 21:06:44] "POST /search HTTP/1.1" 200 -
+2025-07-10 21:06:52,711 - INFO - 127.0.0.1 - - [10/Jul/2025 21:06:52] "GET /audit HTTP/1.1" 200 -
+2025-07-10 21:07:02,395 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:07:06,357 - INFO - 127.0.0.1 - - [10/Jul/2025 21:07:06] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:12:08,975 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:12:09,142 - INFO -  * Restarting with stat
+2025-07-10 21:12:10,156 - INFO - AUDIT: {"timestamp": "2025-07-10T21:12:10.156681", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:12:10,159 - INFO - AUDIT: {"timestamp": "2025-07-10T21:12:10.158682", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:12:10,183 - WARNING -  * Debugger is active!
+2025-07-10 21:12:10,190 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:12:50,439 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 21:12:50,550 - INFO -  * Restarting with stat
+2025-07-10 21:12:51,575 - INFO - AUDIT: {"timestamp": "2025-07-10T21:12:51.575716", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:12:51,579 - INFO - AUDIT: {"timestamp": "2025-07-10T21:12:51.579629", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:12:51,602 - WARNING -  * Debugger is active!
+2025-07-10 21:12:51,605 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:13:19,983 - INFO - AUDIT: {"timestamp": "2025-07-10T21:13:19.983253", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:13:19,984 - INFO - AUDIT: {"timestamp": "2025-07-10T21:13:19.984250", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:13:20,048 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.94.87.1:5004
+2025-07-10 21:13:20,048 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 21:13:20,050 - INFO -  * Restarting with stat
+2025-07-10 21:13:20,758 - INFO - AUDIT: {"timestamp": "2025-07-10T21:13:20.758917", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:13:20,762 - INFO - AUDIT: {"timestamp": "2025-07-10T21:13:20.761000", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:13:20,789 - WARNING -  * Debugger is active!
+2025-07-10 21:13:20,794 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:13:33,440 - INFO - 127.0.0.1 - - [10/Jul/2025 21:13:33] "GET /?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162213110 HTTP/1.1" 200 -
+2025-07-10 21:13:40,654 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:13:45,492 - INFO - 127.0.0.1 - - [10/Jul/2025 21:13:45] "GET /inactive?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162220640 HTTP/1.1" 200 -
+2025-07-10 21:14:25,153 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:14:25,204 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:14:25,270 - INFO -  * Restarting with stat
+2025-07-10 21:14:25,323 - INFO -  * Restarting with stat
+2025-07-10 21:14:26,013 - INFO - AUDIT: {"timestamp": "2025-07-10T21:14:26.013385", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:14:26,015 - INFO - AUDIT: {"timestamp": "2025-07-10T21:14:26.015908", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:14:26,032 - INFO - AUDIT: {"timestamp": "2025-07-10T21:14:26.032000", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:14:26,033 - INFO - AUDIT: {"timestamp": "2025-07-10T21:14:26.033999", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:14:26,034 - WARNING -  * Debugger is active!
+2025-07-10 21:14:26,038 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:14:26,056 - WARNING -  * Debugger is active!
+2025-07-10 21:14:26,061 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:14:37,653 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:14:37,665 - INFO - 127.0.0.1 - - [10/Jul/2025 21:14:37] "GET /inactive?test=true&id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162277329 HTTP/1.1" 200 -
+2025-07-10 21:14:59,259 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:14:59,281 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:14:59,398 - INFO -  * Restarting with stat
+2025-07-10 21:14:59,419 - INFO -  * Restarting with stat
+2025-07-10 21:15:00,446 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:00.446075", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:15:00,448 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:00.448076", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:15:00,460 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:00.460373", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:15:00,462 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:00.462384", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:15:00,469 - WARNING -  * Debugger is active!
+2025-07-10 21:15:00,473 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:15:00,484 - WARNING -  * Debugger is active!
+2025-07-10 21:15:00,488 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:15:27,659 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 21:15:27,659 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 21:15:27,772 - INFO -  * Restarting with stat
+2025-07-10 21:15:27,778 - INFO -  * Restarting with stat
+2025-07-10 21:15:28,658 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:28.657502", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:15:28,658 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:28.658457", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:15:28,660 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:28.660460", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:15:28,660 - INFO - AUDIT: {"timestamp": "2025-07-10T21:15:28.660460", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:15:28,680 - WARNING -  * Debugger is active!
+2025-07-10 21:15:28,681 - WARNING -  * Debugger is active!
+2025-07-10 21:15:28,684 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:15:28,684 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:15:34,791 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:15:34,804 - INFO - 127.0.0.1 - - [10/Jul/2025 21:15:34] "GET /inactive?test=true&id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162334458 HTTP/1.1" 200 -
+2025-07-10 21:15:44,994 - INFO - 127.0.0.1 - - [10/Jul/2025 21:15:44] "GET /?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162344987 HTTP/1.1" 200 -
+2025-07-10 21:15:56,320 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:15:56,330 - INFO - 127.0.0.1 - - [10/Jul/2025 21:15:56] "GET /permissions?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162356001 HTTP/1.1" 200 -
+2025-07-10 21:16:05,865 - INFO - 127.0.0.1 - - [10/Jul/2025 21:16:05] "GET /manage?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162365844 HTTP/1.1" 200 -
+2025-07-10 21:17:27,768 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:17:31,967 - INFO - 127.0.0.1 - - [10/Jul/2025 21:17:31] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:17:35,475 - ERROR - Unexpected error removing access: log_action() missing 1 required positional argument: 'details'
+2025-07-10 21:17:35,476 - INFO - 127.0.0.1 - - [10/Jul/2025 21:17:35] "[35m[1mPOST /api/remove-access HTTP/1.1[0m" 500 -
+2025-07-10 21:19:04,383 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:19:07,439 - INFO - 127.0.0.1 - - [10/Jul/2025 21:19:07] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:19:11,332 - ERROR - Unexpected error removing access: log_action() missing 1 required positional argument: 'details'
+2025-07-10 21:19:11,334 - INFO - 127.0.0.1 - - [10/Jul/2025 21:19:11] "[35m[1mPOST /api/remove-access HTTP/1.1[0m" 500 -
+2025-07-10 21:19:34,584 - ERROR - Unexpected error removing access: log_action() missing 1 required positional argument: 'details'
+2025-07-10 21:19:34,584 - INFO - 127.0.0.1 - - [10/Jul/2025 21:19:34] "[35m[1mPOST /api/remove-access HTTP/1.1[0m" 500 -
+2025-07-10 21:21:07,338 - INFO - 127.0.0.1 - - [10/Jul/2025 21:21:07] "GET / HTTP/1.1" 200 -
+2025-07-10 21:21:12,656 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:21:15,450 - INFO - 127.0.0.1 - - [10/Jul/2025 21:21:15] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:22:03,021 - INFO - AUDIT: {"timestamp": "2025-07-10T21:22:03.021633", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:22:03,023 - INFO - AUDIT: {"timestamp": "2025-07-10T21:22:03.023539", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:22:03,066 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.94.87.1:5004
+2025-07-10 21:22:03,066 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 21:22:03,069 - INFO -  * Restarting with stat
+2025-07-10 21:22:03,774 - INFO - AUDIT: {"timestamp": "2025-07-10T21:22:03.774433", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:22:03,776 - INFO - AUDIT: {"timestamp": "2025-07-10T21:22:03.776438", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:22:03,796 - WARNING -  * Debugger is active!
+2025-07-10 21:22:03,800 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:23:43,396 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:23:43,496 - INFO -  * Restarting with stat
+2025-07-10 21:23:44,399 - INFO - AUDIT: {"timestamp": "2025-07-10T21:23:44.398347", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:23:44,403 - INFO - AUDIT: {"timestamp": "2025-07-10T21:23:44.403344", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:23:44,443 - WARNING -  * Debugger is active!
+2025-07-10 21:23:44,447 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:23:53,505 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:23:53,614 - INFO -  * Restarting with stat
+2025-07-10 21:23:54,507 - INFO - AUDIT: {"timestamp": "2025-07-10T21:23:54.507939", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:23:54,509 - INFO - AUDIT: {"timestamp": "2025-07-10T21:23:54.509945", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:23:54,534 - WARNING -  * Debugger is active!
+2025-07-10 21:23:54,537 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:24:30,551 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:24:30,562 - INFO - 127.0.0.1 - - [10/Jul/2025 21:24:30] "GET /inactive?test=true&id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752162870214 HTTP/1.1" 200 -
+2025-07-10 21:25:16,503 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:25:21,626 - INFO - 127.0.0.1 - - [10/Jul/2025 21:25:21] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:25:30,047 - INFO - AUDIT: {"timestamp": "2025-07-10T21:25:30.047333", "action": "remove_access_test", "details": "Simulated removal of access for murukanhally.krp.mdy@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+2025-07-10 21:25:30,056 - INFO - 127.0.0.1 - - [10/Jul/2025 21:25:30] "POST /api/remove-access HTTP/1.1" 200 -
+2025-07-10 21:26:10,046 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:26:14,695 - INFO - 127.0.0.1 - - [10/Jul/2025 21:26:14] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:26:23,750 - INFO - AUDIT: {"timestamp": "2025-07-10T21:26:23.749219", "action": "remove_access_test", "details": "Simulated removal of access for ppura.haravugp@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+2025-07-10 21:26:23,752 - INFO - 127.0.0.1 - - [10/Jul/2025 21:26:23] "POST /api/remove-access HTTP/1.1" 200 -
+2025-07-10 21:27:10,880 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:27:10,887 - INFO - 127.0.0.1 - - [10/Jul/2025 21:27:10] "GET /inactive?test=true HTTP/1.1" 200 -
+2025-07-10 21:27:26,833 - INFO - AUDIT: {"timestamp": "2025-07-10T21:27:26.833275", "action": "remove_access_test", "details": "Simulated removal of access for john.doe@example.com from Project Documentation.docx", "user": "system"}
+2025-07-10 21:27:26,835 - INFO - 127.0.0.1 - - [10/Jul/2025 21:27:26] "POST /api/remove-access HTTP/1.1" 200 -
+2025-07-10 21:29:26,753 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 21:29:26,884 - INFO -  * Restarting with stat
+2025-07-10 21:29:27,896 - INFO - AUDIT: {"timestamp": "2025-07-10T21:29:27.896499", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:29:27,901 - INFO - AUDIT: {"timestamp": "2025-07-10T21:29:27.901749", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:29:27,928 - WARNING -  * Debugger is active!
+2025-07-10 21:29:27,931 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:29:51,093 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 21:29:51,203 - INFO -  * Restarting with stat
+2025-07-10 21:29:52,250 - INFO - AUDIT: {"timestamp": "2025-07-10T21:29:52.249883", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:29:52,253 - INFO - AUDIT: {"timestamp": "2025-07-10T21:29:52.253880", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:29:52,296 - WARNING -  * Debugger is active!
+2025-07-10 21:29:52,303 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:30:02,408 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:30:02,419 - INFO - 127.0.0.1 - - [10/Jul/2025 21:30:02] "GET /inactive?test=true&id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752163200754 HTTP/1.1" 200 -
+2025-07-10 21:31:13,919 - INFO - AUDIT: {"timestamp": "2025-07-10T21:31:13.918150", "action": "remove_access_test", "details": "Simulated removal of access for test@example.com from test.txt", "user": "system"}
+2025-07-10 21:31:13,921 - INFO - 127.0.0.1 - - [10/Jul/2025 21:31:13] "POST /api/remove-access HTTP/1.1" 200 -
+2025-07-10 21:31:48,321 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:31:48,329 - INFO - 127.0.0.1 - - [10/Jul/2025 21:31:48] "GET /inactive?test=true&id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752163307967 HTTP/1.1" 200 -
+2025-07-10 21:32:25,708 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:32:25,716 - INFO - 127.0.0.1 - - [10/Jul/2025 21:32:25] "GET /inactive?test=true HTTP/1.1" 200 -
+2025-07-10 21:32:31,706 - INFO - AUDIT: {"timestamp": "2025-07-10T21:32:31.706975", "action": "remove_access_test", "details": "Simulated removal of access for john.doe@example.com from Project Documentation.docx", "user": "system"}
+2025-07-10 21:32:31,710 - INFO - 127.0.0.1 - - [10/Jul/2025 21:32:31] "POST /api/remove-access HTTP/1.1" 200 -
+2025-07-10 21:33:06,535 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:33:09,796 - INFO - 127.0.0.1 - - [10/Jul/2025 21:33:09] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:33:14,513 - INFO - AUDIT: {"timestamp": "2025-07-10T21:33:14.513359", "action": "remove_access_test", "details": "Simulated removal of access for murukanhally.krp.mdy@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+2025-07-10 21:33:14,516 - INFO - 127.0.0.1 - - [10/Jul/2025 21:33:14] "POST /api/remove-access HTTP/1.1" 200 -
+2025-07-10 21:33:36,514 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:33:40,324 - INFO - 127.0.0.1 - - [10/Jul/2025 21:33:40] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 21:33:45,207 - INFO - 127.0.0.1 - - [10/Jul/2025 21:33:45] "GET / HTTP/1.1" 200 -
+2025-07-10 21:33:50,016 - INFO - 127.0.0.1 - - [10/Jul/2025 21:33:50] "GET /audit HTTP/1.1" 200 -
+2025-07-10 21:34:13,940 - INFO - 127.0.0.1 - - [10/Jul/2025 21:34:13] "GET /manage HTTP/1.1" 200 -
+2025-07-10 21:35:04,449 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:35:04,465 - INFO - 127.0.0.1 - - [10/Jul/2025 21:35:04] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:35:09,279 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:35:13,734 - INFO - 127.0.0.1 - - [10/Jul/2025 21:35:13] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 21:35:29,146 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:35:29,158 - INFO - 127.0.0.1 - - [10/Jul/2025 21:35:29] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:35:52,434 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:35:52,448 - INFO - 127.0.0.1 - - [10/Jul/2025 21:35:52] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:35:59,120 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:36:01,647 - INFO - 127.0.0.1 - - [10/Jul/2025 21:36:01] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 21:36:15,000 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:36:16,139 - WARNING - Encountered 403 Forbidden with reason "cannotRemoveOwner"
+2025-07-10 21:36:16,140 - INFO - AUDIT: {"timestamp": "2025-07-10T21:36:16.140620", "action": "update_permission_failed", "details": "Failed to update permission 03220530731717295228: <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8/permissions/03220530731717295228?alt=json returned \"The owner of a file cannot be removed.\". Details: \"[{'message': 'The owner of a file cannot be removed.', 'domain': 'global', 'reason': 'cannotRemoveOwner'}]\">", "user": "system"}
+2025-07-10 21:36:16,143 - INFO - 127.0.0.1 - - [10/Jul/2025 21:36:16] "POST /api/update_permission HTTP/1.1" 200 -
+2025-07-10 21:36:58,834 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:36:58,850 - INFO - 127.0.0.1 - - [10/Jul/2025 21:36:58] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:37:09,406 - INFO - 127.0.0.1 - - [10/Jul/2025 21:37:09] "GET / HTTP/1.1" 200 -
+2025-07-10 21:37:11,270 - INFO - 127.0.0.1 - - [10/Jul/2025 21:37:11] "GET /manage HTTP/1.1" 200 -
+2025-07-10 21:37:30,609 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:37:31,446 - INFO - AUDIT: {"timestamp": "2025-07-10T21:37:31.446187", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 404 when requesting https://www.googleapis.com/drive/v3/files/Labsheet3/permissions?sendNotificationEmail=true&alt=json returned \"File not found: Labsheet3.\". Details: \"[{'message': 'File not found: Labsheet3.', 'domain': 'global', 'reason': 'notFound', 'location': 'fileId', 'locationType': 'parameter'}]\">", "user": "system"}
+2025-07-10 21:37:31,461 - INFO - 127.0.0.1 - - [10/Jul/2025 21:37:31] "POST /manage HTTP/1.1" 200 -
+2025-07-10 21:38:40,825 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:38:40,834 - INFO - 127.0.0.1 - - [10/Jul/2025 21:38:40] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:38:46,120 - INFO - 127.0.0.1 - - [10/Jul/2025 21:38:46] "GET /manage HTTP/1.1" 200 -
+2025-07-10 21:40:26,005 - INFO -  * Detected change in 'D:\\Cazelabs\\templates.py', reloading
+2025-07-10 21:40:26,137 - INFO -  * Restarting with stat
+2025-07-10 21:40:27,138 - INFO - AUDIT: {"timestamp": "2025-07-10T21:40:27.137769", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:40:27,140 - INFO - AUDIT: {"timestamp": "2025-07-10T21:40:27.140773", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:40:27,160 - WARNING -  * Debugger is active!
+2025-07-10 21:40:27,164 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:40:45,283 - INFO -  * Detected change in 'D:\\Cazelabs\\templates.py', reloading
+2025-07-10 21:40:45,386 - INFO -  * Restarting with stat
+2025-07-10 21:40:46,303 - INFO - AUDIT: {"timestamp": "2025-07-10T21:40:46.303964", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:40:46,308 - INFO - AUDIT: {"timestamp": "2025-07-10T21:40:46.307972", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:40:46,332 - WARNING -  * Debugger is active!
+2025-07-10 21:40:46,337 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:41:05,465 - INFO -  * Detected change in 'D:\\Cazelabs\\templates.py', reloading
+2025-07-10 21:41:05,560 - INFO -  * Restarting with stat
+2025-07-10 21:41:06,400 - INFO - AUDIT: {"timestamp": "2025-07-10T21:41:06.400284", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:41:06,403 - INFO - AUDIT: {"timestamp": "2025-07-10T21:41:06.403318", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:41:06,438 - WARNING -  * Debugger is active!
+2025-07-10 21:41:06,445 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:43:00,137 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:43:00,254 - INFO -  * Restarting with stat
+2025-07-10 21:43:01,139 - INFO - AUDIT: {"timestamp": "2025-07-10T21:43:01.139958", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:43:01,141 - INFO - AUDIT: {"timestamp": "2025-07-10T21:43:01.141959", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:43:01,163 - WARNING -  * Debugger is active!
+2025-07-10 21:43:01,166 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:43:22,281 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 21:43:22,374 - INFO -  * Restarting with stat
+2025-07-10 21:43:23,226 - INFO - AUDIT: {"timestamp": "2025-07-10T21:43:23.226709", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:43:23,228 - INFO - AUDIT: {"timestamp": "2025-07-10T21:43:23.228716", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:43:23,247 - WARNING -  * Debugger is active!
+2025-07-10 21:43:23,251 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:44:04,507 - INFO -  * Detected change in 'D:\\Cazelabs\\templates.py', reloading
+2025-07-10 21:44:04,616 - INFO -  * Restarting with stat
+2025-07-10 21:44:05,500 - INFO - AUDIT: {"timestamp": "2025-07-10T21:44:05.500865", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 21:44:05,502 - INFO - AUDIT: {"timestamp": "2025-07-10T21:44:05.502856", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 21:44:05,524 - WARNING -  * Debugger is active!
+2025-07-10 21:44:05,528 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 21:44:18,060 - INFO - 127.0.0.1 - - [10/Jul/2025 21:44:18] "GET /manage?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752164057736 HTTP/1.1" 200 -
+2025-07-10 21:49:06,279 - INFO - 127.0.0.1 - - [10/Jul/2025 21:49:06] "GET /manage HTTP/1.1" 200 -
+2025-07-10 21:49:15,379 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:49:18,473 - INFO - AUDIT: {"timestamp": "2025-07-10T21:49:18.473448", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8", "user": "system"}
+2025-07-10 21:49:18,488 - INFO - 127.0.0.1 - - [10/Jul/2025 21:49:18] "POST /manage HTTP/1.1" 200 -
+2025-07-10 21:49:27,820 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:49:27,840 - INFO - 127.0.0.1 - - [10/Jul/2025 21:49:27] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:49:31,455 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:49:33,872 - INFO - 127.0.0.1 - - [10/Jul/2025 21:49:33] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 21:54:32,381 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:54:34,521 - INFO - 127.0.0.1 - - [10/Jul/2025 21:54:34] "[35m[1mPOST /permissions HTTP/1.1[0m" 500 -
+2025-07-10 21:54:34,676 - INFO - 127.0.0.1 - - [10/Jul/2025 21:54:34] "[36mGET /permissions?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-10 21:54:34,701 - INFO - 127.0.0.1 - - [10/Jul/2025 21:54:34] "[36mGET /permissions?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-10 21:54:35,023 - INFO - 127.0.0.1 - - [10/Jul/2025 21:54:35] "GET /permissions?__debugger__=yes&cmd=resource&f=console.png&s=pB7rQgZcT0vSlZ1MmRVo HTTP/1.1" 200 -
+2025-07-10 21:54:35,291 - INFO - 127.0.0.1 - - [10/Jul/2025 21:54:35] "[36mGET /permissions?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-10 21:55:51,731 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:55:58,019 - INFO - 127.0.0.1 - - [10/Jul/2025 21:55:58] "[35m[1mPOST /permissions HTTP/1.1[0m" 500 -
+2025-07-10 21:55:58,373 - INFO - 127.0.0.1 - - [10/Jul/2025 21:55:58] "[36mGET /permissions?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-10 21:55:58,375 - INFO - 127.0.0.1 - - [10/Jul/2025 21:55:58] "[36mGET /permissions?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-10 21:55:58,629 - INFO - 127.0.0.1 - - [10/Jul/2025 21:55:58] "[36mGET /permissions?__debugger__=yes&cmd=resource&f=console.png&s=pB7rQgZcT0vSlZ1MmRVo HTTP/1.1[0m" 304 -
+2025-07-10 21:55:58,716 - INFO - 127.0.0.1 - - [10/Jul/2025 21:55:58] "[36mGET /permissions?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-10 21:56:16,944 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:56:20,728 - INFO - 127.0.0.1 - - [10/Jul/2025 21:56:20] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 21:56:56,487 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:56:59,108 - INFO - 127.0.0.1 - - [10/Jul/2025 21:56:59] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 21:57:13,300 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:57:13,307 - INFO - 127.0.0.1 - - [10/Jul/2025 21:57:13] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 21:57:14,828 - INFO - 127.0.0.1 - - [10/Jul/2025 21:57:14] "GET /manage HTTP/1.1" 200 -
+2025-07-10 21:57:39,793 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:57:41,812 - INFO - 127.0.0.1 - - [10/Jul/2025 21:57:41] "POST /manage HTTP/1.1" 200 -
+2025-07-10 21:58:35,318 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 21:58:38,338 - INFO - 127.0.0.1 - - [10/Jul/2025 21:58:38] "POST /manage HTTP/1.1" 200 -
+2025-07-10 22:00:06,306 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 22:00:08,791 - INFO - 127.0.0.1 - - [10/Jul/2025 22:00:08] "POST /manage HTTP/1.1" 200 -
+2025-07-10 22:02:39,403 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 22:02:39,600 - INFO -  * Restarting with stat
+2025-07-10 22:13:42,699 - INFO - AUDIT: {"timestamp": "2025-07-10T22:13:42.699145", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 22:13:42,701 - INFO - AUDIT: {"timestamp": "2025-07-10T22:13:42.701143", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 22:13:42,748 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.94.87.1:5004
+2025-07-10 22:13:42,749 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 22:13:42,751 - INFO -  * Restarting with stat
+2025-07-10 22:13:43,483 - INFO - AUDIT: {"timestamp": "2025-07-10T22:13:43.482455", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 22:13:43,484 - INFO - AUDIT: {"timestamp": "2025-07-10T22:13:43.484415", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 22:13:43,504 - WARNING -  * Debugger is active!
+2025-07-10 22:13:43,508 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 22:13:56,644 - INFO - 127.0.0.1 - - [10/Jul/2025 22:13:56] "GET /diagnose?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752165836308 HTTP/1.1" 200 -
+2025-07-10 22:14:31,185 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 22:14:32,785 - INFO - 127.0.0.1 - - [10/Jul/2025 22:14:32] "POST /diagnose?id=c2d624a2-b04b-475d-90aa-f4dcc1d659e1&vscodeBrowserReqId=1752165836308 HTTP/1.1" 200 -
+2025-07-10 22:15:45,091 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 22:15:46,357 - INFO - 127.0.0.1 - - [10/Jul/2025 22:15:46] "POST /manage HTTP/1.1" 200 -
+2025-07-10 22:16:00,133 - INFO - 127.0.0.1 - - [10/Jul/2025 22:16:00] "GET /manage HTTP/1.1" 200 -
+2025-07-10 22:16:11,372 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 22:16:12,436 - INFO - 127.0.0.1 - - [10/Jul/2025 22:16:12] "POST /manage HTTP/1.1" 200 -
+2025-07-10 22:17:58,025 - INFO -  * Detected change in 'D:\\Cazelabs\\diagnostic_template.py', reloading
+2025-07-10 22:17:58,155 - INFO -  * Restarting with stat
+2025-07-10 22:17:59,158 - INFO - AUDIT: {"timestamp": "2025-07-10T22:17:59.158690", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 22:17:59,160 - INFO - AUDIT: {"timestamp": "2025-07-10T22:17:59.160779", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 22:17:59,188 - WARNING -  * Debugger is active!
+2025-07-10 22:17:59,191 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 22:18:59,579 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 22:18:59,688 - INFO -  * Restarting with stat
+2025-07-10 22:19:00,555 - INFO - AUDIT: {"timestamp": "2025-07-10T22:19:00.555625", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 22:19:00,557 - INFO - AUDIT: {"timestamp": "2025-07-10T22:19:00.557628", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 22:19:00,579 - WARNING -  * Debugger is active!
+2025-07-10 22:19:00,584 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 22:19:18,697 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 22:19:18,801 - INFO -  * Restarting with stat
+2025-07-10 22:19:19,585 - INFO - AUDIT: {"timestamp": "2025-07-10T22:19:19.585088", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 22:19:19,587 - INFO - AUDIT: {"timestamp": "2025-07-10T22:19:19.587084", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 22:19:19,606 - WARNING -  * Debugger is active!
+2025-07-10 22:19:19,617 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 22:19:49,756 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 22:19:49,850 - INFO -  * Restarting with stat
+2025-07-10 22:19:50,724 - INFO - AUDIT: {"timestamp": "2025-07-10T22:19:50.724520", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 22:19:50,726 - INFO - AUDIT: {"timestamp": "2025-07-10T22:19:50.726524", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 22:19:50,754 - WARNING -  * Debugger is active!
+2025-07-10 22:19:50,759 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 22:20:03,854 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 22:20:03,963 - INFO -  * Restarting with stat
+2025-07-10 22:20:04,776 - INFO - AUDIT: {"timestamp": "2025-07-10T22:20:04.776899", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 22:20:04,778 - INFO - AUDIT: {"timestamp": "2025-07-10T22:20:04.778811", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 22:20:04,798 - WARNING -  * Debugger is active!
+2025-07-10 22:20:04,802 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 22:20:18,886 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 22:20:18,982 - INFO -  * Restarting with stat

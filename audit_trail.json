@@ -1,0 +1,109 @@
+{"timestamp": "2025-07-10T20:18:48.797710", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:18:48.799622", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:18:49.671564", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:18:49.673485", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:26:39.378809", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:26:39.379811", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:26:39.971207", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:26:39.973137", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:31:45.318371", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:31:45.319373", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:31:45.934725", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:31:45.937728", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:35:42.994668", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:35:42.996670", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:36:27.455882", "action": "detect_inactive_users_failed", "details": "Error detecting inactive users: <HttpError 500 when requesting https://www.googleapis.com/drive/v3/files?q=trashed+%3D+false&fields=nextPageToken%2C+files%28id%2C+name%2C+permissions%2C+modifiedTime%29&pageToken=~%21%21~AI9FV7QWlZPiF0DBMg5n61X_0S36ftKKNwMalyGahHd_27zx6nBL8zH1Zd-MEuKyXnxZWrLGmzuOMOx1siUu_YH2rP8C82o-zPrLDdgxiCvEqmDXvUoYIJmWRjh0USS_hjJHHFE8MtFGMV1CJXTJ37AZdf1Mj92PVX9RqGP-RT7pmt8DgcQtMIlZE41aS3VD2xxbKVlsTEfPLYbA7x2FwJB9lRNfZ5FOce9Pqwozu-o97-A58hWrQ8SBX2tzx1_kVpLItS-MhJkscW26UMOLYQp7seElKBoK-MKhh8jvn6-jNz31AFnqgHSI3l7Sn3WCrRQ0kO5FbBkzAZeyiqacrVxyf_xzFeLAxO3vPl9gNuy1pQCSWoeWKjwkEqh3sC7Matj3bDlVdysP2skY71cK1RnaWwup8fDwPEGY57sAhv0ApovMRYvGZffEP7YFz2UpBzjRM-4-bmXWoGiagP589ZbdHfF7067CwM9IrMaOn2MPQuY__rhRJoo%3D&alt=json returned \"Internal Error\". Details: \"[{'message': 'Internal Error', 'domain': 'global', 'reason': 'internalError'}]\">", "user": "system"}
+{"timestamp": "2025-07-10T20:39:27.997168", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:39:27.998167", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:39:59.001209", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:39:59.002209", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:51:31.534385", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:51:31.537381", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:53:11.975177", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:53:11.977297", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:53:51.825385", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:53:51.827386", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:54:18.758728", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T20:54:18.761728", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T20:56:33.450761", "action": "configure_alert", "details": "Alert configured: permission_change for admin@example.com", "user": "system"}
+{"timestamp": "2025-07-10T20:58:40.145667", "action": "search_files_failed", "details": "Search failed: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files?q=name+contains+%27Codeforces+2.0%27s+directory%27+and+trashed+%3D+false&fields=files%28id%2C+name%2C+mimeType%2C+owners%2C+permissions%2C+modifiedTime%29&supportsAllDrives=true&includeItemsFromAllDrives=true&alt=json returned \"Invalid Value\". Details: \"[{'message': 'Invalid Value', 'domain': 'global', 'reason': 'invalid', 'location': 'q', 'locationType': 'parameter'}]\">", "user": "system"}
+{"timestamp": "2025-07-10T20:58:40.146667", "action": "search", "details": "Search performed: Codeforces 2.0's directory, type: ", "user": "system"}
+{"timestamp": "2025-07-10T20:59:36.475224", "action": "search", "details": "Search performed: Labsheet3, type: ", "user": "system"}
+{"timestamp": "2025-07-10T21:06:44.469802", "action": "search_files_failed", "details": "Search failed: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files?q=name+contains+%27Codeforces+2.0%27s+directory%27+and+trashed+%3D+false+and+mimeType+%3D+%27application%2Fvnd.google-apps.folder%27&fields=files%28id%2C+name%2C+mimeType%2C+owners%2C+permissions%2C+modifiedTime%29&supportsAllDrives=true&includeItemsFromAllDrives=true&alt=json returned \"Invalid Value\". Details: \"[{'message': 'Invalid Value', 'domain': 'global', 'reason': 'invalid', 'location': 'q', 'locationType': 'parameter'}]\">", "user": "system"}
+{"timestamp": "2025-07-10T21:06:44.472334", "action": "search", "details": "Search performed: Codeforces 2.0's directory, type: folder", "user": "system"}
+{"timestamp": "2025-07-10T21:12:10.156681", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:12:10.158682", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:12:51.575716", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:12:51.579629", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:13:19.983253", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:13:19.984250", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:13:20.758917", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:13:20.761000", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:14:26.013385", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:14:26.015908", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:14:26.032000", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:14:26.033999", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:15:00.446075", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:15:00.448076", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:15:00.460373", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:15:00.462384", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:15:28.657502", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:15:28.658457", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:15:28.660460", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:15:28.660460", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:22:03.021633", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:22:03.023539", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:22:03.774433", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:22:03.776438", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:23:44.398347", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:23:44.403344", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:23:54.507939", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:23:54.509945", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:25:30.047333", "action": "remove_access_test", "details": "Simulated removal of access for murukanhally.krp.mdy@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+{"timestamp": "2025-07-10T21:26:23.749219", "action": "remove_access_test", "details": "Simulated removal of access for ppura.haravugp@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+{"timestamp": "2025-07-10T21:27:26.833275", "action": "remove_access_test", "details": "Simulated removal of access for john.doe@example.com from Project Documentation.docx", "user": "system"}
+{"timestamp": "2025-07-10T21:29:27.896499", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:29:27.901749", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:29:52.249883", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:29:52.253880", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:31:13.918150", "action": "remove_access_test", "details": "Simulated removal of access for test@example.com from test.txt", "user": "system"}
+{"timestamp": "2025-07-10T21:32:31.706975", "action": "remove_access_test", "details": "Simulated removal of access for john.doe@example.com from Project Documentation.docx", "user": "system"}
+{"timestamp": "2025-07-10T21:33:14.513359", "action": "remove_access_test", "details": "Simulated removal of access for murukanhally.krp.mdy@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+{"timestamp": "2025-07-10T21:36:16.140620", "action": "update_permission_failed", "details": "Failed to update permission 03220530731717295228: <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8/permissions/03220530731717295228?alt=json returned \"The owner of a file cannot be removed.\". Details: \"[{'message': 'The owner of a file cannot be removed.', 'domain': 'global', 'reason': 'cannotRemoveOwner'}]\">", "user": "system"}
+{"timestamp": "2025-07-10T21:37:31.446187", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 404 when requesting https://www.googleapis.com/drive/v3/files/Labsheet3/permissions?sendNotificationEmail=true&alt=json returned \"File not found: Labsheet3.\". Details: \"[{'message': 'File not found: Labsheet3.', 'domain': 'global', 'reason': 'notFound', 'location': 'fileId', 'locationType': 'parameter'}]\">", "user": "system"}
+{"timestamp": "2025-07-10T21:40:27.137769", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:40:27.140773", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:40:46.303964", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:40:46.307972", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:41:06.400284", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:41:06.403318", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:43:01.139958", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:43:01.141959", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:43:23.226709", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:43:23.228716", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:44:05.500865", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T21:44:05.502856", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T21:49:18.473448", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8", "user": "system"}
+{"timestamp": "2025-07-10T22:13:42.699145", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:13:42.701143", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:13:43.482455", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:13:43.484415", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:17:59.158690", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:17:59.160779", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:19:00.555625", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:19:00.557628", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:19:19.585088", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:19:19.587084", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:19:50.724520", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:19:50.726524", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:20:04.776899", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:20:04.778811", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:20:19.753036", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-07-10T22:20:19.755035", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-07-10T22:23:52.553810", "action": "update_permission", "details": "Updated permission 17724644493021413100 to writer for file 1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8", "user": "system"}
+{"timestamp": "2025-07-10T22:25:17.003102", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8", "user": "system"}
+{"timestamp": "2025-07-10T22:26:00.166205", "action": "add_permission", "details": "Added writer permission for madhuyuva06@gmail.com to file 1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8", "user": "system"}
+{"timestamp": "2025-07-10T22:26:45.529182", "action": "update_permission", "details": "Updated permission 17724644493021413100 to reader for file 1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8", "user": "system"}
+{"timestamp": "2025-07-10T22:27:07.888291", "action": "search", "details": "Search performed: Labsheet3, type: ", "user": "system"}
+{"timestamp": "2025-07-10T22:28:25.850488", "action": "remove_access_test", "details": "Simulated removal of access for murukanhally.krp.mdy@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+{"timestamp": "2025-07-10T22:31:40.337593", "action": "update_permission", "details": "Updated permission 17724644493021413100 to writer for file 1FCRdatZ8kxY-P5gyQj89XA_3NDTwbcQucD9-UTCTEK8", "user": "system"}
