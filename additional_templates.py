@@ -536,6 +536,7 @@ BATCH_TEMPLATE = """
                     <form method="POST" class="mb-4">
                         <div class="row">
                             <div class="col-md-4">
+                                <label class="form-label text-white">Operation:</label>
                                 <select name="operation" class="form-select" required>
                                     <option value="">Select Operation</option>
                                     <option value="add_permission">Add Permission</option>
@@ -544,34 +545,125 @@ BATCH_TEMPLATE = """
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="file_pattern" class="form-control" placeholder="File pattern (e.g., *.pdf)" required>
+                                <label class="form-label text-white">File Pattern:</label>
+                                <input type="text" name="file_pattern" class="form-control" 
+                                       placeholder="e.g., Labsheet* or *.pdf or exact name" required>
+                                <small class="text-white-50">Use * for wildcards</small>
                             </div>
                             <div class="col-md-4">
-                                <input type="email" name="email" class="form-control" placeholder="User email" required>
+                                <label class="form-label text-white">User Email:</label>
+                                <input type="email" name="email" class="form-control" 
+                                       placeholder="user@example.com" required>
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
+                                <label class="form-label text-white">Role:</label>
                                 <select name="role" class="form-select">
                                     <option value="reader">Reader</option>
                                     <option value="writer">Writer</option>
                                     <option value="owner">Owner</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">
-                                <button type="submit" class="btn btn-primary w-100">
-                                    <i class="fas fa-play"></i> Execute Batch Operation
+                            <div class="col-md-3">
+                                <div class="form-check mt-4">
+                                    <input class="form-check-input" type="checkbox" name="test_mode" id="test_mode">
+                                    <label class="form-check-label text-white" for="test_mode">
+                                        Test Mode (Simulation)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-white">&nbsp;</label>
+                                <button type="submit" class="btn btn-primary w-100 d-block">
+                                    <i class="fas fa-play me-2"></i>Execute Batch Operation
                                 </button>
                             </div>
                         </div>
                     </form>
 
-                    {% if output %}
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ 'danger' if category == 'error' else category }} alert-dismissible fade show" role="alert">
+                                    {{ message }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+
+                    {% if batch_results %}
                     <div class="alert alert-info">
-                        <h5><i class="fas fa-info-circle"></i> Operation Results:</h5>
-                        {{ output|safe }}
+                        <h5><i class="fas fa-info-circle me-2"></i>Operation Results:</h5>
+                        <p><strong>{{ summary }}</strong></p>
+                        {% if files_found is defined %}
+                            <p><small>Files found matching pattern: {{ files_found }}</small></p>
+                        {% endif %}
+                        {% if test_mode %}
+                            <div class="alert alert-warning"><i class="fas fa-flask me-2"></i><strong>TEST MODE:</strong> No actual changes were made to Google Drive</div>
+                        {% endif %}
+                        
+                        <div class="table-responsive mt-3">
+                            <table class="table table-sm table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>File Name</th>
+                                        <th>Status</th>
+                                        <th>Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for result in batch_results %}
+                                    <tr>
+                                        <td>{{ result.file_name }}</td>
+                                        <td>
+                                            {% if result.success %}
+                                                <span class="badge bg-success">Success</span>
+                                            {% else %}
+                                                <span class="badge bg-danger">Failed</span>
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ result.message }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     {% endif %}
+                    
+                    <!-- Help Section -->
+                    <div class="mt-4">
+                        <h5 class="text-white"><i class="fas fa-question-circle me-2"></i>How to Use Batch Operations:</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card bg-dark text-white">
+                                    <div class="card-body">
+                                        <h6 class="card-title">File Pattern Examples:</h6>
+                                        <ul class="small">
+                                            <li><code>Labsheet*</code> - All files starting with "Labsheet"</li>
+                                            <li><code>*.pdf</code> - All PDF files</li>
+                                            <li><code>*report*</code> - All files containing "report"</li>
+                                            <li><code>Budget 2024</code> - Exact file name match</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-dark text-white">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Operations:</h6>
+                                        <ul class="small">
+                                            <li><strong>Add Permission:</strong> Give access to a user</li>
+                                            <li><strong>Remove Permission:</strong> Remove user's access</li>
+                                            <li><strong>Change Role:</strong> Update existing permission level</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

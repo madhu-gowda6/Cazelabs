@@ -605,3 +605,311 @@
 2025-07-10 22:31:42,998 - INFO - file_cache is only supported with oauth2client<4.0.0
 2025-07-10 22:31:45,053 - INFO - 127.0.0.1 - - [10/Jul/2025 22:31:45] "POST /permissions HTTP/1.1" 200 -
 2025-07-10 22:32:23,996 - INFO - 127.0.0.1 - - [10/Jul/2025 22:32:23] "GET /batch HTTP/1.1" 200 -
+2025-07-10 22:39:42,575 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 22:39:42,586 - INFO - 127.0.0.1 - - [10/Jul/2025 22:39:42] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 22:39:45,480 - INFO - 127.0.0.1 - - [10/Jul/2025 22:39:45] "GET / HTTP/1.1" 200 -
+2025-07-10 22:39:47,982 - INFO - 127.0.0.1 - - [10/Jul/2025 22:39:47] "GET /alerts HTTP/1.1" 200 -
+2025-07-10 22:40:06,342 - INFO - AUDIT: {"timestamp": "2025-07-10T22:40:06.342858", "action": "configure_alert", "details": "Alert configured: inactive_users for madhuyuva06@gmail.com", "user": "system"}
+2025-07-10 22:40:06,356 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:06] "POST /alerts HTTP/1.1" 200 -
+2025-07-10 22:40:34,000 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:34] "GET /batch HTTP/1.1" 200 -
+2025-07-10 22:40:36,074 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 22:40:36,085 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:36] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 22:40:38,997 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:38] "GET /manage HTTP/1.1" 200 -
+2025-07-10 22:40:40,673 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:40] "GET /search HTTP/1.1" 200 -
+2025-07-10 22:40:42,474 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:42] "GET /audit HTTP/1.1" 200 -
+2025-07-10 22:40:45,652 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 22:40:52,083 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:52] "GET /inactive HTTP/1.1" 200 -
+2025-07-10 22:41:10,046 - INFO - 127.0.0.1 - - [10/Jul/2025 22:41:10] "GET / HTTP/1.1" 200 -
+2025-07-10 23:10:23,967 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 23:10:24,748 - INFO -  * Restarting with stat
+2025-07-10 23:11:05,550 - INFO - AUDIT: {"timestamp": "2025-07-10T23:11:05.550715", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 23:11:05,554 - INFO - AUDIT: {"timestamp": "2025-07-10T23:11:05.554713", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 23:11:05,616 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://10.94.87.1:5004
+2025-07-10 23:11:05,616 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 23:11:05,619 - INFO -  * Restarting with stat
+2025-07-10 23:11:06,272 - INFO - AUDIT: {"timestamp": "2025-07-10T23:11:06.271553", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 23:11:06,274 - INFO - AUDIT: {"timestamp": "2025-07-10T23:11:06.273556", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 23:11:06,299 - WARNING -  * Debugger is active!
+2025-07-10 23:11:06,322 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 23:11:12,913 - INFO - 127.0.0.1 - - [10/Jul/2025 23:11:12] "GET / HTTP/1.1" 200 -
+2025-07-10 23:11:17,840 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 23:11:17,859 - INFO - 127.0.0.1 - - [10/Jul/2025 23:11:17] "GET /permissions HTTP/1.1" 200 -
+2025-07-10 23:11:22,313 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-07-10 23:11:26,664 - INFO - 127.0.0.1 - - [10/Jul/2025 23:11:26] "POST /permissions HTTP/1.1" 200 -
+2025-07-10 23:23:44,887 - INFO - 127.0.0.1 - - [10/Jul/2025 23:23:44] "GET / HTTP/1.1" 200 -
+2025-07-10 23:23:48,654 - INFO - 127.0.0.1 - - [10/Jul/2025 23:23:48] "GET /batch HTTP/1.1" 200 -
+2025-07-10 23:25:51,835 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-07-10 23:25:52,036 - INFO -  * Restarting with stat
+2025-07-10 23:25:53,099 - INFO - AUDIT: {"timestamp": "2025-07-10T23:25:53.099731", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 23:25:53,101 - INFO - AUDIT: {"timestamp": "2025-07-10T23:25:53.101726", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 23:25:53,129 - WARNING -  * Debugger is active!
+2025-07-10 23:25:53,133 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 23:26:20,292 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 23:26:20,400 - INFO -  * Restarting with stat
+2025-07-10 23:26:21,381 - INFO - AUDIT: {"timestamp": "2025-07-10T23:26:21.381100", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 23:26:21,383 - INFO - AUDIT: {"timestamp": "2025-07-10T23:26:21.383052", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 23:26:21,407 - WARNING -  * Debugger is active!
+2025-07-10 23:26:21,410 - INFO -  * Debugger PIN: 137-908-749
+2025-07-10 23:27:40,028 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-07-10 23:27:40,277 - INFO -  * Restarting with stat
+2025-07-10 23:27:41,665 - INFO - AUDIT: {"timestamp": "2025-07-10T23:27:41.665924", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-07-10 23:27:41,675 - INFO - AUDIT: {"timestamp": "2025-07-10T23:27:41.675907", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-07-10 23:27:41,718 - WARNING -  * Debugger is active!
+2025-07-10 23:27:41,723 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:03:52,511 - INFO - AUDIT: {"timestamp": "2025-08-03T16:03:52.510515", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:03:52,514 - INFO - AUDIT: {"timestamp": "2025-08-03T16:03:52.514088", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:03:52,577 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.0.11:5004
+2025-08-03 16:03:52,578 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-03 16:03:52,580 - INFO -  * Restarting with stat
+2025-08-03 16:03:53,431 - INFO - AUDIT: {"timestamp": "2025-08-03T16:03:53.431354", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:03:53,433 - INFO - AUDIT: {"timestamp": "2025-08-03T16:03:53.433415", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:03:53,453 - WARNING -  * Debugger is active!
+2025-08-03 16:03:53,473 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:04:09,902 - INFO - 127.0.0.1 - - [03/Aug/2025 16:04:09] "GET / HTTP/1.1" 200 -
+2025-08-03 16:04:10,261 - INFO - 127.0.0.1 - - [03/Aug/2025 16:04:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-03 16:04:14,944 - INFO - 127.0.0.1 - - [03/Aug/2025 16:04:14] "GET /batch HTTP/1.1" 200 -
+2025-08-03 16:04:19,792 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:04:20,125 - INFO -  * Restarting with stat
+2025-08-03 16:04:22,302 - INFO - AUDIT: {"timestamp": "2025-08-03T16:04:22.302606", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:04:22,313 - INFO - AUDIT: {"timestamp": "2025-08-03T16:04:22.313276", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:04:22,362 - WARNING -  * Debugger is active!
+2025-08-03 16:04:22,373 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:04:34,456 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:04:34,609 - INFO -  * Restarting with stat
+2025-08-03 16:04:36,131 - INFO - AUDIT: {"timestamp": "2025-08-03T16:04:36.131987", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:04:36,136 - INFO - AUDIT: {"timestamp": "2025-08-03T16:04:36.136626", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:04:36,190 - WARNING -  * Debugger is active!
+2025-08-03 16:04:36,195 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:04:50,284 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:04:50,412 - INFO -  * Restarting with stat
+2025-08-03 16:04:51,746 - INFO - AUDIT: {"timestamp": "2025-08-03T16:04:51.746514", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:04:51,748 - INFO - AUDIT: {"timestamp": "2025-08-03T16:04:51.748238", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:04:51,770 - WARNING -  * Debugger is active!
+2025-08-03 16:04:51,775 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:05:02,840 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-08-03 16:05:02,954 - INFO -  * Restarting with stat
+2025-08-03 16:05:04,046 - INFO - AUDIT: {"timestamp": "2025-08-03T16:05:04.046842", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:05:04,050 - INFO - AUDIT: {"timestamp": "2025-08-03T16:05:04.050841", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:05:04,074 - WARNING -  * Debugger is active!
+2025-08-03 16:05:04,079 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:05:17,161 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-08-03 16:05:17,250 - INFO -  * Restarting with stat
+2025-08-03 16:05:18,115 - INFO - AUDIT: {"timestamp": "2025-08-03T16:05:18.115373", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:05:18,117 - INFO - AUDIT: {"timestamp": "2025-08-03T16:05:18.116893", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:05:18,140 - WARNING -  * Debugger is active!
+2025-08-03 16:05:18,144 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:05:24,567 - INFO - 127.0.0.1 - - [03/Aug/2025 16:05:24] "GET /batch HTTP/1.1" 200 -
+2025-08-03 16:05:28,235 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-08-03 16:05:28,452 - INFO -  * Restarting with stat
+2025-08-03 16:05:29,563 - INFO - AUDIT: {"timestamp": "2025-08-03T16:05:29.563749", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:05:29,566 - INFO - AUDIT: {"timestamp": "2025-08-03T16:05:29.566779", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:05:29,599 - WARNING -  * Debugger is active!
+2025-08-03 16:05:29,606 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:05:39,487 - INFO - 127.0.0.1 - - [03/Aug/2025 16:05:39] "GET /batch?id=d8ef095b-2a7a-4ca4-9e16-9734e9cec841&vscodeBrowserReqId=1754217339128 HTTP/1.1" 200 -
+2025-08-03 16:07:15,891 - INFO - 127.0.0.1 - - [03/Aug/2025 16:07:15] "[35m[1mPOST /batch?id=d8ef095b-2a7a-4ca4-9e16-9734e9cec841&vscodeBrowserReqId=1754217339128 HTTP/1.1[0m" 500 -
+2025-08-03 16:07:16,019 - INFO - 127.0.0.1 - - [03/Aug/2025 16:07:16] "GET /batch?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-08-03 16:07:16,328 - INFO - 127.0.0.1 - - [03/Aug/2025 16:07:16] "GET /batch?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-08-03 16:07:16,696 - INFO - 127.0.0.1 - - [03/Aug/2025 16:07:16] "GET /batch?__debugger__=yes&cmd=resource&f=console.png&s=wgZhSLDr0PFw06fk2ALb HTTP/1.1" 200 -
+2025-08-03 16:07:20,442 - INFO - 127.0.0.1 - - [03/Aug/2025 16:07:20] "[36mGET /batch?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-03 16:08:18,436 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:08:18,607 - INFO -  * Restarting with stat
+2025-08-03 16:08:20,535 - INFO - AUDIT: {"timestamp": "2025-08-03T16:08:20.535268", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:08:20,538 - INFO - AUDIT: {"timestamp": "2025-08-03T16:08:20.538354", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:08:20,570 - WARNING -  * Debugger is active!
+2025-08-03 16:08:20,576 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:08:31,654 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:08:31,792 - INFO -  * Restarting with stat
+2025-08-03 16:08:33,394 - INFO - AUDIT: {"timestamp": "2025-08-03T16:08:33.394215", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:08:33,396 - INFO - AUDIT: {"timestamp": "2025-08-03T16:08:33.396485", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:08:33,424 - WARNING -  * Debugger is active!
+2025-08-03 16:08:33,429 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:08:41,488 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:08:41,613 - INFO -  * Restarting with stat
+2025-08-03 16:08:42,863 - INFO - AUDIT: {"timestamp": "2025-08-03T16:08:42.863392", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:08:42,865 - INFO - AUDIT: {"timestamp": "2025-08-03T16:08:42.865562", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:08:42,889 - WARNING -  * Debugger is active!
+2025-08-03 16:08:42,893 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:09:50,187 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:09:50,272 - INFO -  * Restarting with stat
+2025-08-03 16:09:51,401 - INFO - AUDIT: {"timestamp": "2025-08-03T16:09:51.401869", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:09:51,402 - INFO - AUDIT: {"timestamp": "2025-08-03T16:09:51.402872", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:09:51,421 - WARNING -  * Debugger is active!
+2025-08-03 16:09:51,424 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:10:01,466 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:10:01,544 - INFO -  * Restarting with stat
+2025-08-03 16:10:02,587 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:02.587527", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:10:02,589 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:02.589550", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:10:02,607 - WARNING -  * Debugger is active!
+2025-08-03 16:10:02,610 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:10:26,717 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:10:26,821 - INFO -  * Restarting with stat
+2025-08-03 16:10:27,794 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:27.794826", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:10:27,796 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:27.796869", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:10:27,811 - WARNING -  * Debugger is active!
+2025-08-03 16:10:27,814 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:10:44,881 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:10:44,954 - INFO -  * Restarting with stat
+2025-08-03 16:10:45,895 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:45.894206", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:10:45,896 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:45.896398", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:10:45,916 - WARNING -  * Debugger is active!
+2025-08-03 16:10:45,919 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:10:55,965 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:10:56,049 - INFO -  * Restarting with stat
+2025-08-03 16:10:57,042 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:57.042730", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:10:57,045 - INFO - AUDIT: {"timestamp": "2025-08-03T16:10:57.045242", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:10:57,059 - WARNING -  * Debugger is active!
+2025-08-03 16:10:57,062 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:11:07,107 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:11:07,212 - INFO -  * Restarting with stat
+2025-08-03 16:11:08,376 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:08.376472", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:11:08,379 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:08.379475", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:11:08,405 - WARNING -  * Debugger is active!
+2025-08-03 16:11:08,413 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:11:29,521 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:11:29,606 - INFO -  * Restarting with stat
+2025-08-03 16:11:30,682 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:30.682083", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:11:30,684 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:30.684104", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:11:30,700 - WARNING -  * Debugger is active!
+2025-08-03 16:11:30,704 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:11:39,771 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:11:39,869 - INFO -  * Restarting with stat
+2025-08-03 16:11:40,503 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:40.503219", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:11:40,504 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:40.504263", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:11:40,521 - WARNING -  * Debugger is active!
+2025-08-03 16:11:40,524 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:11:51,570 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:11:51,652 - INFO -  * Restarting with stat
+2025-08-03 16:11:52,273 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:52.273167", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:11:52,275 - INFO - AUDIT: {"timestamp": "2025-08-03T16:11:52.275005", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:11:52,288 - WARNING -  * Debugger is active!
+2025-08-03 16:11:52,291 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:12:08,362 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:12:08,431 - INFO -  * Restarting with stat
+2025-08-03 16:12:09,028 - INFO - AUDIT: {"timestamp": "2025-08-03T16:12:09.028732", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:12:09,030 - INFO - AUDIT: {"timestamp": "2025-08-03T16:12:09.030767", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:12:09,046 - WARNING -  * Debugger is active!
+2025-08-03 16:12:09,050 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:12:49,109 - INFO - 127.0.0.1 - - [03/Aug/2025 16:12:49] "GET /batch HTTP/1.1" 200 -
+2025-08-03 16:13:20,580 - INFO - "GET /?state=wnk4kub5Vk5XAUXkExDhvzNIbxJA5d&code=4/0AVMBsJjPNSTiahf06fOGzQjGXUwGOQ_lHCySqLiYO5vsDHMWnf2hazB1G11P0eqbSAFC9Q&scope=https://www.googleapis.com/auth/drive%20https://www.googleapis.com/auth/admin.directory.group.readonly%20https://www.googleapis.com/auth/admin.directory.user.readonly HTTP/1.1" 200 65
+2025-08-03 16:13:20,900 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-03 16:13:20,932 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:20.932775", "action": "batch_search", "details": "Searching with query: name contains '.pdf' and trashed=false", "user": "system"}
+2025-08-03 16:13:22,025 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:22.025396", "action": "batch_search_result", "details": "Found 29 files matching pattern: *.pdf", "user": "system"}
+2025-08-03 16:13:24,038 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:24.038437", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+2025-08-03 16:13:24,039 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:24.039602", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Labsheet3.pdf", "user": "system"}
+2025-08-03 16:13:25,306 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:25.306287", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1zOWah4YG6HRMy40ip-OJVHyNg5QwEI1Z/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:25,308 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:25.308796", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to WEEK-01.pdf", "user": "system"}
+2025-08-03 16:13:27,144 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:27.144343", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1b8KTqR5C2m_tNsMHOuQJyEvPeeCw9AnU", "user": "system"}
+2025-08-03 16:13:27,145 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:27.145358", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to MADHU H T -20201CSE0594 PR 2.pdf", "user": "system"}
+2025-08-03 16:13:28,845 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:28.845808", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1G9oD1tsEEs_iz1OCmo3IPW6GxTTpeI-B", "user": "system"}
+2025-08-03 16:13:28,847 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:28.846380", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to MADHU H T -20201CSE0594 pr 1.pdf", "user": "system"}
+2025-08-03 16:13:30,620 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:30.620658", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 13Aq655Kq8kKC1_wT2jr_Q9OFJ1qhOHJU", "user": "system"}
+2025-08-03 16:13:30,622 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:30.622173", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to MADHU H T -20201CSE0594 pr 1.pdf", "user": "system"}
+2025-08-03 16:13:32,572 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:32.572373", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1jy5RbJbr1EQL4W0ey3uib289dBQcF8uK", "user": "system"}
+2025-08-03 16:13:32,574 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:32.573542", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to CP pr 2.pdf", "user": "system"}
+2025-08-03 16:13:34,283 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:34.283869", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 19e8-pwLLFdpO1hn4p3VlwE7cbYYZ-OGc", "user": "system"}
+2025-08-03 16:13:34,286 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:34.286390", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to CP 1 pr.pdf", "user": "system"}
+2025-08-03 16:13:35,844 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:35.844893", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1XdgT4auYdnAFb_UQJG0c8fEQ6LuU0XbP", "user": "system"}
+2025-08-03 16:13:35,845 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:35.845909", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Untitled document - Google Docs.pdf", "user": "system"}
+2025-08-03 16:13:37,445 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:37.445716", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1tg9ndTTk1dodZEoetnE6FlFu9UMvYhLY", "user": "system"}
+2025-08-03 16:13:37,447 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:37.447806", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Verification slip.pdf", "user": "system"}
+2025-08-03 16:13:39,007 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:39.007328", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1tbzyr_xQLF-usKv8nFoyJRRavJH6xyd3", "user": "system"}
+2025-08-03 16:13:39,008 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:39.008436", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Print\u2026.pdf", "user": "system"}
+2025-08-03 16:13:40,910 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:40.910259", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1gESNGsDkKBY14cdKT931T3YD_Kqp-HoU/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:40,911 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:40.911242", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Installing Kali Linux on VirtualBox.pdf", "user": "system"}
+2025-08-03 16:13:42,587 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:42.587778", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1EqTVDrvduJkOBNQMlSdy7_WdJ3Z2Sipk", "user": "system"}
+2025-08-03 16:13:42,589 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:42.589815", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Invoice wifi adopter tplink.pdf", "user": "system"}
+2025-08-03 16:13:43,792 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:43.792326", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1muneNGCqCmnvYc4YqSw3sbK99FZPjhQa/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:43,793 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:43.793344", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Adobe - LeetCode.pdf", "user": "system"}
+2025-08-03 16:13:45,435 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:45.435710", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/17-SAmFYTzYOTRTyUY73nEcny_j4JGoGp/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:45,437 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:45.437732", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to A way to practice CP.pdf", "user": "system"}
+2025-08-03 16:13:46,925 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:46.925380", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1zHTJxWqmyjSEMZqUeA-FrQvFah54N4V3/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:46,927 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:46.927992", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to (7) Microsoft - LeetCode.pdf", "user": "system"}
+2025-08-03 16:13:49,483 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:49.482562", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/16tik8Vj_yyOmuDXc7f2THdeIDaAAwJ4U/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:49,484 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:49.484858", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to A Complete Resource Book in Chemistry for JEE Main 2019-Pearson India (2018).pdf", "user": "system"}
+2025-08-03 16:13:50,905 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:50.905053", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/16s2vV3fdSpUGwFSmBhSoH5HhOdqq0s6_/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:50,907 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:50.907214", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to A Complete Resource Book in Mathematics for JEE Main 2019-Pearson India (2018).pdf", "user": "system"}
+2025-08-03 16:13:52,243 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:52.243517", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/16qUrSMDNzV8oKcO-wFkn6wcUZ0dRMkyp/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:52,245 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:52.244823", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to A Complete Resource Book in Physics for JEE Main 2019-Pearson India (2018).pdf", "user": "system"}
+2025-08-03 16:13:54,067 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:54.067359", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/16_WNWoGZAXvSkHHQ4uLktrb4I3QNzW41/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:54,069 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:54.069523", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to 111colourful.biology.pdf", "user": "system"}
+2025-08-03 16:13:55,342 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:55.342361", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1Jm5SZZSpMp1IT8-24B11yA1g04A_ePAE/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:55,343 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:55.343348", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to jee main key 7th jan naranyan eve.pdf", "user": "system"}
+2025-08-03 16:13:56,923 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:56.923066", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/13PAdCrJBuUwSAYWYmTJuB68U0ngWTBl2/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:56,924 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:56.924084", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to 7th shift 2.pdf", "user": "system"}
+2025-08-03 16:13:58,075 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:58.075829", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1yHVM9M-UyA9IjGtX1oYy7O9bz4M1fEwc/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:58,077 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:58.077950", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to English Versio.pdf", "user": "system"}
+2025-08-03 16:13:59,104 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:59.104752", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/0B7PakaIrSzo1ZkNtbFhOX3dHMXc/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:13:59,106 - INFO - AUDIT: {"timestamp": "2025-08-03T16:13:59.105773", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Grammar-Question 10.pdf", "user": "system"}
+2025-08-03 16:14:00,067 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:00.067333", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/0B7PakaIrSzo1OXJFZVFucUxkYVU/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:14:00,068 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:00.068156", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to First-Language-English-Papers-2012 1.pdf", "user": "system"}
+2025-08-03 16:14:01,389 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:01.389245", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/0B7WTkS2Aqpw9dmVJSXFraEFlVWc/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:14:01,391 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:01.391234", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Karnataka SSLC Second Language Alternate English Sample Paper 2.pdf", "user": "system"}
+2025-08-03 16:14:02,865 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:02.865152", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/0B7WTkS2Aqpw9bEw0S1F5eG8zNzA/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:14:02,867 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:02.867370", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Karnataka SSLC Second Language Alternate English Sample Paper 3.pdf", "user": "system"}
+2025-08-03 16:14:04,264 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:04.264952", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/0B7WTkS2Aqpw9N21QMEdNU0tjMlU/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:14:04,267 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:04.266290", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Karnataka SSLC Science Sample Paper 5.pdf", "user": "system"}
+2025-08-03 16:14:05,574 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:05.574715", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/0B7WTkS2Aqpw9OUxWTXZkMEVhcnc/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:14:05,577 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:05.576159", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Karnataka SSLC Science Sample Paper 4.pdf", "user": "system"}
+2025-08-03 16:14:07,061 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:07.061573", "action": "add_permission_failed", "details": "Failed to add permission for madhuyuva06@gmail.com: <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/0B7WTkS2Aqpw9YWFUQWhzQTVkdWs/permissions?sendNotificationEmail=true&alt=json returned \"Bad Request. User message: \"Sorry, you do not have permission to share.\"\". Details: \"[{'message': 'Bad Request. User message: \"Sorry, you do not have permission to share.\"', 'domain': 'global', 'reason': 'invalidSharingRequest'}]\">", "user": "system"}
+2025-08-03 16:14:07,062 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:07.062672", "action": "batch_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Karnataka SSLC Science Sample Paper 3.pdf", "user": "system"}
+2025-08-03 16:14:07,064 - INFO - AUDIT: {"timestamp": "2025-08-03T16:14:07.064145", "action": "batch_operation_complete", "details": "Operation: add_permission, Pattern: *.pdf, Email: madhuyuva06@gmail.com, Success: 10/29", "user": "system"}
+2025-08-03 16:14:07,076 - INFO - 127.0.0.1 - - [03/Aug/2025 16:14:07] "POST /batch HTTP/1.1" 200 -
+2025-08-03 16:15:08,003 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-03 16:15:08,008 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:08.008819", "action": "batch_search", "details": "Searching with query: name contains '.pdf' and trashed=false", "user": "system"}
+2025-08-03 16:15:08,917 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:08.917056", "action": "batch_search_result", "details": "Found 29 files matching pattern: *.pdf", "user": "system"}
+2025-08-03 16:15:10,147 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:10.147244", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1EqTVDrvduJkOBNQMlSdy7_WdJ3Z2Sipk", "user": "system"}
+2025-08-03 16:15:10,148 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:10.148767", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from Invoice wifi adopter tplink.pdf", "user": "system"}
+2025-08-03 16:15:11,301 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:11.301251", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1tbzyr_xQLF-usKv8nFoyJRRavJH6xyd3", "user": "system"}
+2025-08-03 16:15:11,302 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:11.302862", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from Print\u2026.pdf", "user": "system"}
+2025-08-03 16:15:12,474 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:12.474469", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1tg9ndTTk1dodZEoetnE6FlFu9UMvYhLY", "user": "system"}
+2025-08-03 16:15:12,475 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:12.475634", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from Verification slip.pdf", "user": "system"}
+2025-08-03 16:15:13,656 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:13.656862", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1XdgT4auYdnAFb_UQJG0c8fEQ6LuU0XbP", "user": "system"}
+2025-08-03 16:15:13,657 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:13.657912", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from Untitled document - Google Docs.pdf", "user": "system"}
+2025-08-03 16:15:15,522 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:15.522474", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 19e8-pwLLFdpO1hn4p3VlwE7cbYYZ-OGc", "user": "system"}
+2025-08-03 16:15:15,524 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:15.524699", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from CP 1 pr.pdf", "user": "system"}
+2025-08-03 16:15:16,705 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:16.705914", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1jy5RbJbr1EQL4W0ey3uib289dBQcF8uK", "user": "system"}
+2025-08-03 16:15:16,707 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:16.707419", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from CP pr 2.pdf", "user": "system"}
+2025-08-03 16:15:17,943 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:17.943220", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 13Aq655Kq8kKC1_wT2jr_Q9OFJ1qhOHJU", "user": "system"}
+2025-08-03 16:15:17,945 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:17.944277", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from MADHU H T -20201CSE0594 pr 1.pdf", "user": "system"}
+2025-08-03 16:15:19,098 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:19.098918", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1G9oD1tsEEs_iz1OCmo3IPW6GxTTpeI-B", "user": "system"}
+2025-08-03 16:15:19,101 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:19.101113", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from MADHU H T -20201CSE0594 pr 1.pdf", "user": "system"}
+2025-08-03 16:15:20,357 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:20.357663", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1b8KTqR5C2m_tNsMHOuQJyEvPeeCw9AnU", "user": "system"}
+2025-08-03 16:15:20,358 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:20.358660", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from MADHU H T -20201CSE0594 PR 2.pdf", "user": "system"}
+2025-08-03 16:15:21,989 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:21.989370", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+2025-08-03 16:15:21,991 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:21.991015", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from Labsheet3.pdf", "user": "system"}
+2025-08-03 16:15:22,452 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:23,044 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:23,451 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:23,827 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:24,204 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:24,635 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:25,099 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:25,546 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:25,993 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:26,367 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:26,803 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:27,175 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:27,525 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:27,959 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:28,443 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:28,886 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:29,332 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:29,807 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:30,266 - WARNING - Encountered 403 Forbidden with reason "insufficientFilePermissions"
+2025-08-03 16:15:30,267 - INFO - AUDIT: {"timestamp": "2025-08-03T16:15:30.267629", "action": "batch_operation_complete", "details": "Operation: remove_permission, Pattern: *.pdf, Email: madhuyuva06@gmail.com, Success: 10/29", "user": "system"}
+2025-08-03 16:15:30,285 - INFO - 127.0.0.1 - - [03/Aug/2025 16:15:30] "POST /batch HTTP/1.1" 200 -
+2025-08-03 16:15:54,217 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-03 16:15:57,136 - INFO - 127.0.0.1 - - [03/Aug/2025 16:15:57] "GET /inactive HTTP/1.1" 200 -
+2025-08-03 16:16:03,194 - INFO - AUDIT: {"timestamp": "2025-08-03T16:16:03.194965", "action": "remove_access_test", "details": "Simulated removal of access for murukanhally.krp.mdy@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+2025-08-03 16:16:03,196 - INFO - 127.0.0.1 - - [03/Aug/2025 16:16:03] "POST /api/remove-access HTTP/1.1" 200 -
+2025-08-03 16:16:16,435 - INFO - 127.0.0.1 - - [03/Aug/2025 16:16:16] "GET /audit HTTP/1.1" 200 -
+2025-08-03 16:16:47,408 - INFO - 127.0.0.1 - - [03/Aug/2025 16:16:47] "GET /search HTTP/1.1" 200 -
+2025-08-03 16:16:49,470 - INFO - 127.0.0.1 - - [03/Aug/2025 16:16:49] "GET /manage HTTP/1.1" 200 -
+2025-08-03 16:16:52,062 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-03 16:16:52,072 - INFO - 127.0.0.1 - - [03/Aug/2025 16:16:52] "GET /permissions HTTP/1.1" 200 -

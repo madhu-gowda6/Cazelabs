@@ -43,15 +43,45 @@ def get_drive_service():
     token_file = 'token.json'
     creds = None
     if os.path.exists(token_file):
-        creds = Credentials.from_authorized_user_file(token_file, SCOPES)
+        try:
+            creds = Credentials.from_authorized_user_file(token_file, SCOPES)
+        except Exception as e:
+            logging.warning(f"Error loading token file: {e}. Will re-authenticate.")
+            # Delete corrupted token file
+            try:
+                os.remove(token_file)
+            except:
+                pass
+            creds = None
+    
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file('credential.json', SCOPES)
-            creds = flow.run_local_server(port=0)
-        with open(token_file, 'w') as token:
-            token.write(creds.to_json())
+            try:
+                creds.refresh(Request())
+            except Exception as e:
+                logging.warning(f"Error refreshing token: {e}. Will re-authenticate.")
+                # Delete expired token file
+                try:
+                    os.remove(token_file)
+                except:
+                    pass
+                creds = None
+        
+        if not creds:
+            try:
+                flow = InstalledAppFlow.from_client_secrets_file('credential.json', SCOPES)
+                creds = flow.run_local_server(port=0)
+            except Exception as e:
+                logging.error(f"Error during authentication: {e}")
+                raise Exception(f"Authentication failed: {e}")
+        
+        # Save the credentials for the next run
+        try:
+            with open(token_file, 'w') as token:
+                token.write(creds.to_json())
+        except Exception as e:
+            logging.warning(f"Error saving token file: {e}")
+    
     return build('drive', 'v3', credentials=creds)
 
 # ---------------- Utility Functions ---------------- #
@@ -158,7 +188,13 @@ def index():
 
 @app.route("/permissions", methods=['GET', 'POST'])
 def permissions():
-    output, service = None, get_drive_service()
+    try:
+        service = get_drive_service()
+    except Exception as e:
+        output = f"<div class='alert alert-danger'>Authentication error: {str(e)}. Please check your credentials and try again.</div>"
+        return render_template_string(PERMISSIONS_TEMPLATE, output=output or "")
+    
+    output = None
     if request.method == "POST":
         query = request.form['query'].strip().lower()
         # Case 1: List files/folders accessible by a user
@@ -302,7 +338,12 @@ def find_permission_by_email(service, file_id, email):
 @app.route("/manage", methods=['GET', 'POST'])
 def manage_permissions():
     if request.method == 'POST':
-        service = get_drive_service()
+        try:
+            service = get_drive_service()
+        except Exception as e:
+            flash(f"Authentication error: {str(e)}. Please check your credentials and try again.", 'danger')
+            return render_template_string(MANAGE_TEMPLATE)
+        
         action = request.form.get('action')
         
         if action == 'add_permission':
@@ -360,7 +401,12 @@ def manage_permissions():
 def search():
     results = []
     if request.method == 'POST':
-        service = get_drive_service()
+        try:
+            service = get_drive_service()
+        except Exception as e:
+            flash(f"Authentication error: {str(e)}. Please check your credentials and try again.", 'danger')
+            return render_template_string(SEARCH_TEMPLATE, results=[])
+        
         query = request.form.get('query', '')
         file_type = request.form.get('file_type', '')
         
@@ -379,7 +425,12 @@ def audit():
 
 @app.route("/inactive")
 def inactive_users():
-    service = get_drive_service()
+    try:
+        service = get_drive_service()
+    except Exception as e:
+        flash(f"Authentication error: {str(e)}. Please check your credentials and try again.", 'danger')
+        return render_template_string(INACTIVE_TEMPLATE, inactive_users=[], days=90, test_mode=False)
+    
     days = int(request.args.get('days', 90))
     test_mode = request.args.get('test', 'false').lower() == 'true'
     
@@ -410,33 +461,211 @@ def inactive_users():
 @app.route("/batch", methods=['GET', 'POST'])
 def batch_operations():
     if request.method == 'POST':
-        service = get_drive_service()
-        file_ids = request.form.getlist('file_ids')
+        try:
+            service = get_drive_service()
+        except Exception as e:
+            flash(f"Authentication error: {str(e)}. Please check your credentials and try again.", 'danger')
+            return render_template_string(BATCH_TEMPLATE)
+        
         operation = request.form.get('operation')
+        file_pattern = request.form.get('file_pattern')
+        email = request.form.get('email')
+        role = request.form.get('role', 'reader')
+        test_mode = request.form.get('test_mode') == 'on'
         
-        kwargs = {}
-        if operation == 'add':
-            kwargs = {
-                'email': request.form.get('email'),
-                'role': request.form.get('role', 'reader')
-            }
-        elif operation in ['remove', 'update']:
-            kwargs = {
-                'permission_id': request.form.get('permission_id'),
-                'new_role': request.form.get('new_role') if operation == 'update' else None
-            }
+        if not operation or not file_pattern or not email:
+            flash("All fields are required", 'danger')
+            return render_template_string(BATCH_TEMPLATE)
         
-        results = batch_permission_operation(service, file_ids, operation, **kwargs)
-        flash(f"Batch operation completed on {len(file_ids)} files", 'info')
+        # Test mode for debugging
+        if test_mode:
+            # Simulate finding files for testing
+            files = [
+                {'id': 'test_file_1', 'name': 'Labsheet1'},
+                {'id': 'test_file_2', 'name': 'Labsheet2'},
+                {'id': 'test_file_3', 'name': 'Labsheet3'}
+            ]
+            
+            batch_results = []
+            for file in files:
+                if file_pattern == '*' or file_pattern.lower() in file['name'].lower():
+                    batch_results.append({
+                        'file_name': file['name'],
+                        'success': True,
+                        'message': f"TEST MODE: Would {operation} for {email} with role {role}"
+                    })
+            
+            summary = f"TEST MODE: Found {len(batch_results)} matching files for pattern '{file_pattern}'"
+            flash(f"TEST MODE ACTIVE: {summary}", 'info')
+            
+            return render_template_string(BATCH_TEMPLATE, 
+                                        batch_results=batch_results, 
+                                        summary=summary,
+                                        operation=operation,
+                                        file_pattern=file_pattern,
+                                        email=email,
+                                        test_mode=True)
         
-        return jsonify(results)
+        # Find files matching the pattern
+        try:
+            # Build search query based on pattern
+            if file_pattern.startswith('*') and file_pattern.endswith('*'):
+                # Pattern like *report* - contains search
+                search_term = file_pattern[1:-1]
+                query = f"name contains '{search_term}' and trashed=false"
+            elif file_pattern.startswith('*'):
+                # Pattern like *.pdf or *report - ends with search
+                if file_pattern.startswith('*.'):
+                    # File extension search like *.pdf
+                    extension = file_pattern[2:]
+                    query = f"name contains '.{extension}' and trashed=false"
+                else:
+                    # Ends with search like *report
+                    search_term = file_pattern[1:]
+                    query = f"name contains '{search_term}' and trashed=false"
+            elif file_pattern.endswith('*'):
+                # Pattern like Labsheet* - starts with search
+                search_term = file_pattern[:-1]
+                query = f"name contains '{search_term}' and trashed=false"
+            else:
+                # Exact name match
+                query = f"name='{file_pattern}' and trashed=false"
+            
+            # Log the search query for debugging
+            log_action('batch_search', f"Searching with query: {query}")
+            
+            results = service.files().list(
+                q=query,
+                fields="files(id, name, mimeType)",
+                pageSize=100,
+                supportsAllDrives=True,
+                includeItemsFromAllDrives=True
+            ).execute()
+            
+            files = results.get('files', [])
+            
+            # Additional filtering for better pattern matching
+            if file_pattern.startswith('*') or file_pattern.endswith('*'):
+                filtered_files = []
+                for file in files:
+                    file_name = file['name'].lower()
+                    pattern_lower = file_pattern.lower()
+                    
+                    if pattern_lower.startswith('*') and pattern_lower.endswith('*'):
+                        # *term* - contains
+                        term = pattern_lower[1:-1]
+                        if term in file_name:
+                            filtered_files.append(file)
+                    elif pattern_lower.startswith('*'):
+                        # *term - ends with
+                        if pattern_lower.startswith('*.'):
+                            # *.ext - file extension
+                            ext = pattern_lower[2:]
+                            if file_name.endswith('.' + ext):
+                                filtered_files.append(file)
+                        else:
+                            # *term - ends with term
+                            term = pattern_lower[1:]
+                            if file_name.endswith(term):
+                                filtered_files.append(file)
+                    elif pattern_lower.endswith('*'):
+                        # term* - starts with
+                        term = pattern_lower[:-1]
+                        if file_name.startswith(term):
+                            filtered_files.append(file)
+                files = filtered_files
+            
+            log_action('batch_search_result', f"Found {len(files)} files matching pattern: {file_pattern}")
+            
+            if not files:
+                flash(f"No files found matching pattern: {file_pattern}. Query used: {query}", 'warning')
+                return render_template_string(BATCH_TEMPLATE)
+            
+            # Process each file
+            batch_results = []
+            success_count = 0
+            
+            for file in files:
+                file_id = file['id']
+                file_name = file['name']
+                
+                try:
+                    if operation == 'add_permission':
+                        success, message = add_permission(service, file_id, email, role, 'user')
+                        log_action('batch_add_permission', f"Added {role} permission for {email} to {file_name}")
+                    
+                    elif operation == 'remove_permission':
+                        # Find permission by email first
+                        permission_id, perm_message = find_permission_by_email(service, file_id, email)
+                        if permission_id:
+                            success, message = remove_permission(service, file_id, permission_id)
+                            log_action('batch_remove_permission', f"Removed permission for {email} from {file_name}")
+                        else:
+                            success, message = False, perm_message
+                    
+                    elif operation == 'change_role':
+                        # Find permission by email first
+                        permission_id, perm_message = find_permission_by_email(service, file_id, email)
+                        if permission_id:
+                            success, message = update_permission(service, file_id, permission_id, role)
+                            log_action('batch_change_role', f"Changed role to {role} for {email} on {file_name}")
+                        else:
+                            success, message = False, perm_message
+                    
+                    else:
+                        success, message = False, "Unknown operation"
+                    
+                    if success:
+                        success_count += 1
+                    
+                    batch_results.append({
+                        'file_name': file_name,
+                        'success': success,
+                        'message': message
+                    })
+                    
+                except Exception as e:
+                    batch_results.append({
+                        'file_name': file_name,
+                        'success': False,
+                        'message': str(e)
+                    })
+            
+            # Create summary message
+            summary = f"Batch operation '{operation}' completed: {success_count}/{len(files)} files processed successfully"
+            
+            # Add more detailed logging
+            log_action('batch_operation_complete', f"Operation: {operation}, Pattern: {file_pattern}, Email: {email}, Success: {success_count}/{len(files)}")
+            
+            if success_count > 0:
+                flash(summary, 'success')
+            elif len(files) > 0:
+                flash(f"{summary}. Check individual file results below.", 'warning')
+            else:
+                flash("No files were processed.", 'info')
+            
+            return render_template_string(BATCH_TEMPLATE, 
+                                        batch_results=batch_results, 
+                                        summary=summary,
+                                        operation=operation,
+                                        file_pattern=file_pattern,
+                                        email=email,
+                                        files_found=len(files))
+            
+        except Exception as e:
+            flash(f"Error during batch operation: {str(e)}", 'danger')
+            return render_template_string(BATCH_TEMPLATE)
     
     return render_template_string(BATCH_TEMPLATE)
 
 # API endpoints for AJAX calls
 @app.route("/api/add_permission", methods=['POST'])
 def api_add_permission():
-    service = get_drive_service()
+    try:
+        service = get_drive_service()
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Authentication error: {str(e)}'})
+    
     data = request.get_json()
     
     success, message = add_permission(
@@ -451,7 +680,11 @@ def api_add_permission():
 
 @app.route("/api/remove_permission", methods=['POST'])
 def api_remove_permission():
-    service = get_drive_service()
+    try:
+        service = get_drive_service()
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Authentication error: {str(e)}'})
+    
     data = request.get_json()
     
     success, message = remove_permission(service, data['file_id'], data['permission_id'])
@@ -460,7 +693,11 @@ def api_remove_permission():
 
 @app.route("/api/update_permission", methods=['POST'])
 def api_update_permission():
-    service = get_drive_service()
+    try:
+        service = get_drive_service()
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'Authentication error: {str(e)}'})
+    
     data = request.get_json()
     
     success, message = update_permission(service, data['file_id'], data['permission_id'], data['new_role'])
@@ -488,7 +725,10 @@ def remove_access():
                 'message': f'Successfully removed access for {user_email} from {file_name} (TEST MODE)'
             })
         
-        service = get_drive_service()
+        try:
+            service = get_drive_service()
+        except Exception as e:
+            return jsonify({'error': f'Authentication error: {str(e)}'}), 401
         
         # Find the file by name
         results = service.files().list(
@@ -568,7 +808,11 @@ def get_detailed_permissions(service, file_id):
 def diagnose_permissions():
     """Diagnostic tool to check file permissions"""
     if request.method == 'POST':
-        service = get_drive_service()
+        try:
+            service = get_drive_service()
+        except Exception as e:
+            return render_template_string(DIAGNOSE_TEMPLATE, error=f"Authentication error: {str(e)}. Please check your credentials and try again.")
+        
         file_name = request.form.get('file_name')
         
         if not file_name:
@@ -800,6 +1044,9 @@ def scheduled_inactive_user_check():
     """Scheduled task to check for inactive users"""
     try:
         service = get_drive_service()
+    except Exception as e:
+        log_action('scheduled_task_error', f"Authentication error in scheduled task: {str(e)}")
+        return
         inactive_users = detect_inactive_users(service, days=90)
         
         if inactive_users:
