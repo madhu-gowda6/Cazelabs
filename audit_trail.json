@@ -240,3 +240,32 @@
 {"timestamp": "2025-08-03T16:15:21.991015", "action": "batch_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from Labsheet3.pdf", "user": "system"}
 {"timestamp": "2025-08-03T16:15:30.267629", "action": "batch_operation_complete", "details": "Operation: remove_permission, Pattern: *.pdf, Email: madhuyuva06@gmail.com, Success: 10/29", "user": "system"}
 {"timestamp": "2025-08-03T16:16:03.194965", "action": "remove_access_test", "details": "Simulated removal of access for murukanhally.krp.mdy@gmail.com from Copy of \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0cbf\u0c97\u0cb3 \u0c85\u0cb0\u0cbf\u0cb5\u0cc1 \u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf British Council wall \u0cb8\u0cc3\u0c9c\u0ca8\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c92\u0ca6\u0c97\u0cbf\u0cb8\u0cc1\u0cb5 \u0c95\u0cc1\u0cb0\u0cbf\u0ca4\u0cc1.", "user": "system"}
+{"timestamp": "2025-08-03T16:24:37.074996", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-08-03T16:24:37.076995", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-08-03T16:25:06.149555", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-08-03T16:25:06.151554", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-08-03T16:25:18.968103", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-08-03T16:25:18.970138", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-08-03T16:25:38.787658", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-08-03T16:25:38.789567", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-08-03T16:25:56.657434", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-08-03T16:25:56.659537", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-08-03T16:26:06.449014", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-08-03T16:26:06.451015", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-08-03T16:26:14.280641", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+{"timestamp": "2025-08-03T16:26:14.282642", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+{"timestamp": "2025-08-03T16:30:27.698186", "action": "add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+{"timestamp": "2025-08-03T16:30:27.699098", "action": "bulk_add_permission", "details": "Added reader permission for madhuyuva06@gmail.com to Labsheet3.pdf", "user": "system"}
+{"timestamp": "2025-08-03T16:30:30.154618", "action": "add_permission", "details": "Added reader permission for alokgowda65@gmail.com to file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+{"timestamp": "2025-08-03T16:30:30.156614", "action": "bulk_add_permission", "details": "Added reader permission for alokgowda65@gmail.com to Labsheet3.pdf", "user": "system"}
+{"timestamp": "2025-08-03T16:30:30.157712", "action": "bulk_email_operation_complete", "details": "Operation: add, File: Labsheet3.pdf, Role: reader, Emails: 2, Success: 2/2", "user": "system"}
+{"timestamp": "2025-08-03T16:31:52.555989", "action": "update_permission", "details": "Updated permission 17724644493021413100 to writer for file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+{"timestamp": "2025-08-03T16:31:52.556989", "action": "bulk_update_permission", "details": "Updated role to writer for madhuyuva06@gmail.com on Labsheet3.pdf", "user": "system"}
+{"timestamp": "2025-08-03T16:31:54.166123", "action": "update_permission", "details": "Updated permission 07678862508523844635 to writer for file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+{"timestamp": "2025-08-03T16:31:54.168125", "action": "bulk_update_permission", "details": "Updated role to writer for alokgowda65@gmail.com on Labsheet3.pdf", "user": "system"}
+{"timestamp": "2025-08-03T16:31:54.169118", "action": "bulk_email_operation_complete", "details": "Operation: update, File: Labsheet3.pdf, Role: writer, Emails: 2, Success: 2/2", "user": "system"}
+{"timestamp": "2025-08-03T16:32:51.354104", "action": "remove_permission", "details": "Removed permission 17724644493021413100 from file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+{"timestamp": "2025-08-03T16:32:51.356121", "action": "bulk_remove_permission", "details": "Removed permission for madhuyuva06@gmail.com from Labsheet3.pdf", "user": "system"}
+{"timestamp": "2025-08-03T16:32:52.822778", "action": "remove_permission", "details": "Removed permission 07678862508523844635 from file 1rl74IBTx1N68pQ1gX-upJTEXgONVfkv1", "user": "system"}
+{"timestamp": "2025-08-03T16:32:52.824776", "action": "bulk_remove_permission", "details": "Removed permission for alokgowda65@gmail.com from Labsheet3.pdf", "user": "system"}
+{"timestamp": "2025-08-03T16:32:52.825777", "action": "bulk_email_operation_complete", "details": "Operation: remove, File: Labsheet3.pdf, Role: reader, Emails: 2, Success: 2/2", "user": "system"}

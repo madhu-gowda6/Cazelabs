@@ -913,3 +913,45 @@
 2025-08-03 16:16:49,470 - INFO - 127.0.0.1 - - [03/Aug/2025 16:16:49] "GET /manage HTTP/1.1" 200 -
 2025-08-03 16:16:52,062 - INFO - file_cache is only supported with oauth2client<4.0.0
 2025-08-03 16:16:52,072 - INFO - 127.0.0.1 - - [03/Aug/2025 16:16:52] "GET /permissions HTTP/1.1" 200 -
+2025-08-03 16:24:35,948 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-08-03 16:24:36,114 - INFO -  * Restarting with stat
+2025-08-03 16:24:37,074 - INFO - AUDIT: {"timestamp": "2025-08-03T16:24:37.074996", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:24:37,076 - INFO - AUDIT: {"timestamp": "2025-08-03T16:24:37.076995", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:24:37,102 - WARNING -  * Debugger is active!
+2025-08-03 16:24:37,106 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:25:05,274 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:25:05,367 - INFO -  * Restarting with stat
+2025-08-03 16:25:06,149 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:06.149555", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:25:06,151 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:06.151554", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:25:06,175 - WARNING -  * Debugger is active!
+2025-08-03 16:25:06,178 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:25:18,252 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-08-03 16:25:18,330 - INFO -  * Restarting with stat
+2025-08-03 16:25:18,968 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:18.968103", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:25:18,970 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:18.970138", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:25:18,990 - WARNING -  * Debugger is active!
+2025-08-03 16:25:18,993 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:25:38,126 - INFO -  * Detected change in 'D:\\Cazelabs\\additional_templates.py', reloading
+2025-08-03 16:25:38,196 - INFO -  * Restarting with stat
+2025-08-03 16:25:38,787 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:38.787658", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:25:38,789 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:38.789567", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:25:38,805 - WARNING -  * Debugger is active!
+2025-08-03 16:25:38,809 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:25:55,896 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:25:55,979 - INFO -  * Restarting with stat
+2025-08-03 16:25:56,657 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:56.657434", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:25:56,659 - INFO - AUDIT: {"timestamp": "2025-08-03T16:25:56.659537", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:25:56,677 - WARNING -  * Debugger is active!
+2025-08-03 16:25:56,680 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:26:05,723 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:26:05,810 - INFO -  * Restarting with stat
+2025-08-03 16:26:06,449 - INFO - AUDIT: {"timestamp": "2025-08-03T16:26:06.449014", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:26:06,451 - INFO - AUDIT: {"timestamp": "2025-08-03T16:26:06.451015", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:26:06,472 - WARNING -  * Debugger is active!
+2025-08-03 16:26:06,475 - INFO -  * Debugger PIN: 137-908-749
+2025-08-03 16:26:13,510 - INFO -  * Detected change in 'D:\\Cazelabs\\gdapa-v8.py', reloading
+2025-08-03 16:26:13,579 - INFO -  * Restarting with stat
+2025-08-03 16:26:14,280 - INFO - AUDIT: {"timestamp": "2025-08-03T16:26:14.280641", "action": "app_started", "details": "Google Drive Access Management Portal started", "user": "system"}
+2025-08-03 16:26:14,282 - INFO - AUDIT: {"timestamp": "2025-08-03T16:26:14.282642", "action": "scheduler_started", "details": "Background scheduler started successfully", "user": "system"}
+2025-08-03 16:26:14,301 - WARNING -  * Debugger is active!
+2025-08-03 16:26:14,305 - INFO -  * Debugger PIN: 137-908-749

@@ -658,6 +658,146 @@ def batch_operations():
     
     return render_template_string(BATCH_TEMPLATE)
 
+@app.route("/batch/bulk-emails", methods=['POST'])
+def bulk_email_operations():
+    """Handle bulk email permissions for a single file"""
+    try:
+        service = get_drive_service()
+    except Exception as e:
+        flash(f"Authentication error: {str(e)}. Please check your credentials and try again.", 'danger')
+        return render_template_string(BATCH_TEMPLATE)
+    
+    single_file_name = request.form.get('single_file_name')
+    bulk_emails = request.form.get('bulk_emails')
+    bulk_role = request.form.get('bulk_role', 'reader')
+    bulk_operation = request.form.get('bulk_operation')
+    bulk_test_mode = request.form.get('bulk_test_mode') == 'on'
+    
+    if not single_file_name or not bulk_emails or not bulk_operation:
+        flash("All fields are required for bulk email operations", 'danger')
+        return render_template_string(BATCH_TEMPLATE)
+    
+    # Parse email addresses (handle both comma and newline separation)
+    email_list = []
+    invalid_emails = []
+    for email in bulk_emails.replace(',', '\n').split('\n'):
+        email = email.strip()
+        if email:
+            if validate_email(email):
+                email_list.append(email)
+            else:
+                invalid_emails.append(email)
+    
+    if invalid_emails:
+        flash(f"Invalid email addresses found: {', '.join(invalid_emails)}", 'warning')
+    
+    if not email_list:
+        flash("No valid email addresses found", 'danger')
+        return render_template_string(BATCH_TEMPLATE)
+    
+    # Limit the number of emails to prevent abuse
+    MAX_EMAILS = 100
+    if len(email_list) > MAX_EMAILS:
+        flash(f"Too many emails! Maximum allowed: {MAX_EMAILS}. Found: {len(email_list)}", 'danger')
+        return render_template_string(BATCH_TEMPLATE)
+    
+    # Test mode simulation
+    if bulk_test_mode:
+        bulk_results = []
+        for email in email_list:
+            bulk_results.append({
+                'email': email,
+                'success': True,
+                'message': f"TEST MODE: Would {bulk_operation} {bulk_role} permission for {email}"
+            })
+        
+        summary = f"TEST MODE: Bulk operation '{bulk_operation}' would process {len(email_list)} emails for file '{single_file_name}'"
+        flash(f"TEST MODE ACTIVE: {summary}", 'info')
+        
+        return render_template_string(BATCH_TEMPLATE, 
+                                    bulk_results=bulk_results, 
+                                    bulk_summary=summary,
+                                    bulk_operation_type="bulk_emails",
+                                    single_file_name=single_file_name,
+                                    bulk_test_mode=True)
+    
+    # Find the target file
+    file_id, find_message = find_file_by_name(service, single_file_name)
+    if not file_id:
+        flash(f"File not found: {find_message}", 'danger')
+        return render_template_string(BATCH_TEMPLATE)
+    
+    # Process each email
+    bulk_results = []
+    success_count = 0
+    
+    for email in email_list:
+        try:
+            if bulk_operation == 'add':
+                success, message = add_permission(service, file_id, email, bulk_role, 'user')
+                log_action('bulk_add_permission', f"Added {bulk_role} permission for {email} to {single_file_name}")
+            
+            elif bulk_operation == 'remove':
+                # Find permission by email first
+                permission_id, perm_message = find_permission_by_email(service, file_id, email)
+                if permission_id:
+                    success, message = remove_permission(service, file_id, permission_id)
+                    log_action('bulk_remove_permission', f"Removed permission for {email} from {single_file_name}")
+                else:
+                    success, message = False, perm_message
+            
+            elif bulk_operation == 'update':
+                # Find permission by email first
+                permission_id, perm_message = find_permission_by_email(service, file_id, email)
+                if permission_id:
+                    success, message = update_permission(service, file_id, permission_id, bulk_role)
+                    log_action('bulk_update_permission', f"Updated role to {bulk_role} for {email} on {single_file_name}")
+                else:
+                    success, message = False, perm_message
+            
+            else:
+                success, message = False, "Unknown operation"
+            
+            if success:
+                success_count += 1
+            
+            bulk_results.append({
+                'email': email,
+                'success': success,
+                'message': message
+            })
+            
+        except Exception as e:
+            bulk_results.append({
+                'email': email,
+                'success': False,
+                'message': str(e)
+            })
+    
+    # Create summary message
+    summary = f"Bulk email operation '{bulk_operation}' completed: {success_count}/{len(email_list)} emails processed successfully for file '{single_file_name}'"
+    
+    # Log the bulk operation
+    log_action('bulk_email_operation_complete', 
+               f"Operation: {bulk_operation}, File: {single_file_name}, Role: {bulk_role}, "
+               f"Emails: {len(email_list)}, Success: {success_count}/{len(email_list)}")
+    
+    if success_count > 0:
+        flash(summary, 'success')
+    elif len(email_list) > 0:
+        flash(f"{summary}. Check individual email results below.", 'warning')
+    else:
+        flash("No emails were processed.", 'info')
+    
+    return render_template_string(BATCH_TEMPLATE, 
+                                bulk_results=bulk_results, 
+                                bulk_summary=summary,
+                                bulk_operation_type="bulk_emails",
+                                single_file_name=single_file_name,
+                                bulk_role=bulk_role,
+                                bulk_operation=bulk_operation,
+                                emails_processed=len(email_list))
+
 # API endpoints for AJAX calls
 @app.route("/api/add_permission", methods=['POST'])
 def api_add_permission():
@@ -849,6 +989,12 @@ def diagnose_permissions():
     return render_template_string(DIAGNOSE_TEMPLATE)
 
 # ---------------- Enhanced Utility Functions ---------------- #
+
+def validate_email(email):
+    """Basic email validation"""
+    import re
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    return re.match(pattern, email) is not None
 
 def log_action(action, details, user_email=None):
     """Log actions for audit trail"""

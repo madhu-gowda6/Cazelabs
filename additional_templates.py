@@ -582,6 +582,61 @@ BATCH_TEMPLATE = """
                         </div>
                     </form>
 
+                    <!-- Bulk Email Permissions Section -->
+                    <div class="mt-5 pt-4 border-top border-white-50">
+                        <h3 class="text-center mb-4 text-white">
+                            <i class="fas fa-users text-warning me-2"></i>Bulk Email Permissions
+                            <small class="d-block fs-6 text-white-50 mt-2">Grant permissions to multiple users for a single file</small>
+                        </h3>
+
+                        <form method="POST" action="/batch/bulk-emails" class="mb-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label text-white">File Name:</label>
+                                    <input type="text" name="single_file_name" class="form-control" 
+                                           placeholder="e.g., Project Document or Budget Sheet" required>
+                                    <small class="text-white-50">Enter exact file name</small>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label text-white">Permission Role:</label>
+                                    <select name="bulk_role" class="form-select" required>
+                                        <option value="reader">Reader</option>
+                                        <option value="writer">Writer</option>
+                                        <option value="owner">Owner</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label text-white">Operation:</label>
+                                    <select name="bulk_operation" class="form-select" required>
+                                        <option value="add">Add Permission</option>
+                                        <option value="remove">Remove Permission</option>
+                                        <option value="update">Update Role</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-9">
+                                    <label class="form-label text-white">Email Addresses:</label>
+                                    <textarea name="bulk_emails" class="form-control" rows="4" 
+                                              placeholder="Enter email addresses (one per line or comma-separated):&#10;user1@example.com&#10;user2@example.com&#10;user3@example.com" required></textarea>
+                                    <small class="text-white-50">Separate emails with commas or new lines</small>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-check mt-4">
+                                        <input class="form-check-input" type="checkbox" name="bulk_test_mode" id="bulk_test_mode">
+                                        <label class="form-check-label text-white" for="bulk_test_mode">
+                                            Test Mode
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning w-100 mt-3">
+                                        <i class="fas fa-envelope-bulk me-2"></i>Process Bulk Emails
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                     {% with messages = get_flashed_messages(with_categories=true) %}
                         {% if messages %}
                             {% for category, message in messages %}
@@ -633,11 +688,51 @@ BATCH_TEMPLATE = """
                     </div>
                     {% endif %}
                     
+                    {% if bulk_results %}
+                    <div class="alert alert-success">
+                        <h5><i class="fas fa-envelope-bulk me-2"></i>Bulk Email Operation Results:</h5>
+                        <p><strong>{{ bulk_summary }}</strong></p>
+                        {% if emails_processed is defined %}
+                            <p><small>Total emails processed: {{ emails_processed }}</small></p>
+                        {% endif %}
+                        {% if bulk_test_mode %}
+                            <div class="alert alert-warning"><i class="fas fa-flask me-2"></i><strong>TEST MODE:</strong> No actual changes were made to Google Drive</div>
+                        {% endif %}
+                        
+                        <div class="table-responsive mt-3">
+                            <table class="table table-sm table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Email Address</th>
+                                        <th>Status</th>
+                                        <th>Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for result in bulk_results %}
+                                    <tr>
+                                        <td>{{ result.email }}</td>
+                                        <td>
+                                            {% if result.success %}
+                                                <span class="badge bg-success">Success</span>
+                                            {% else %}
+                                                <span class="badge bg-danger">Failed</span>
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ result.message }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
                     <!-- Help Section -->
                     <div class="mt-4">
                         <h5 class="text-white"><i class="fas fa-question-circle me-2"></i>How to Use Batch Operations:</h5>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="card bg-dark text-white">
                                     <div class="card-body">
                                         <h6 class="card-title">File Pattern Examples:</h6>
@@ -650,7 +745,7 @@ BATCH_TEMPLATE = """
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="card bg-dark text-white">
                                     <div class="card-body">
                                         <h6 class="card-title">Operations:</h6>
@@ -658,6 +753,19 @@ BATCH_TEMPLATE = """
                                             <li><strong>Add Permission:</strong> Give access to a user</li>
                                             <li><strong>Remove Permission:</strong> Remove user's access</li>
                                             <li><strong>Change Role:</strong> Update existing permission level</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-warning text-dark">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Bulk Email Features:</h6>
+                                        <ul class="small">
+                                            <li><strong>Single File:</strong> Grant access to multiple users for one file</li>
+                                            <li><strong>Email Format:</strong> One per line or comma-separated</li>
+                                            <li><strong>Batch Processing:</strong> Process up to 100 emails at once</li>
+                                            <li><strong>Test Mode:</strong> Simulate operations before execution</li>
                                         </ul>
                                     </div>
                                 </div>
